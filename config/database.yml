@@ -1,33 +1,25 @@
-# config/database.yml
-
 default: &default
   adapter: postgresql
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: wip_user
-  password: <%= ENV["WIP_PROJECTS_DATABASE_PASSWORD"] %>
-  host: localhost # Altere conforme a configuração do seu PostgreSQL
-  port: 5432 # Altere se o PostgreSQL estiver em uma porta diferente
-  timeout: 5000
 
 development:
   <<: *default
-  database: wip_projects_development
-  # Se necessário, descomente e configure username e password
-  # username: wip_user
-  # password: <%= ENV["WIP_PROJECTS_DATABASE_PASSWORD"] %>
+  database: associacaorecomecos_development
+  username: <%= ENV['DB_USERNAME'] || "novosrecomecos" %>
+  password: <%= ENV['DB_PASSWORD'] || "recomecos112358132134589" %>
+  host: <%= ENV['DB_HOST'] || "localhost" %>
 
 test:
   <<: *default
-  database: wip_projects_test
-  # Se necessário, descomente e configure username e password
-  # username: wip_user
-  # password: <%= ENV["WIP_PROJECTS_DATABASE_PASSWORD"] %>
+  database: associacaorecomecos_test
+  username: <%= ENV['DB_USERNAME'] || "novosrecomecos" %>
+  password: <%= ENV['DB_PASSWORD'] || "recomecos112358132134589" %>
+  host: <%= ENV['DB_HOST'] || "localhost" %>
 
 production:
   <<: *default
-  database: wip_projects_production
-  username: wip_user
-  password: <%= ENV["WIP_PROJECTS_DATABASE_PASSWORD"] %>
-  host: <%= ENV["DATABASE_HOST"] %> # Defina o host para produção, por exemplo: "localhost" ou o IP do servidor
-  port: <%= ENV["DATABASE_PORT"] %> # Se necessário, defina a porta para produção
+  database: <%= ENV['DB_NAME'] || "associacaorecomecos_production" %>
+  username: <%= ENV['DB_USERNAME'] || "novosrecomecos" %>
+  password: <%= ENV['DB_PASSWORD'] || "recomecos112358132134589" %>
+  host: <%= ENV['DB_HOST'] || "db" %>
