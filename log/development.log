@@ -20767,3 +20767,1776 @@ Processing by GTipoUsuariosController#index as HTML
 Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.6ms (2 queries, 0 cached) | GC: 0.0ms)
 
 
+Started GET "/g_tipo_usuarios" for 127.0.0.1 at 2025-07-18 02:15:29 -0400
+Processing by GTipoUsuariosController#index as HTML
+  [1m[36mGTipoUsuario Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "g_tipo_usuarios"[0m
+  ↳ app/controllers/g_tipo_usuarios_controller.rb:9:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering g_tipo_usuarios/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  [1m[36mGTipoUsuario Load (0.2ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/g_tipo_usuarios/index.html.erb:22
+  Rendered g_tipo_usuarios/index.html.erb within layouts/application (Duration: 3.2ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | GC: 0.0ms)
+Completed 200 OK in 8ms (Views: 5.8ms | ActiveRecord: 0.6ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/g_tipo_usuarios/1/edit" for 127.0.0.1 at 2025-07-18 02:15:30 -0400
+Processing by GTipoUsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGTipoUsuario Load (0.2ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/g_tipo_usuarios_controller.rb:48:in `set_g_tipo_usuario'
+  Rendering layout layouts/application.html.erb
+  Rendering g_tipo_usuarios/edit.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered g_tipo_usuarios/_form.html.erb (Duration: 2.5ms | GC: 0.0ms)
+  Rendered g_tipo_usuarios/edit.html.erb within layouts/application (Duration: 3.5ms | GC: 0.6ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | GC: 1.0ms)
+Completed 200 OK in 14ms (Views: 6.3ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 1.0ms)
+
+
+Started GET "/g_tipo_usuarios" for 127.0.0.1 at 2025-07-18 02:15:31 -0400
+Processing by GTipoUsuariosController#index as HTML
+  [1m[36mGTipoUsuario Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "g_tipo_usuarios"[0m
+  ↳ app/controllers/g_tipo_usuarios_controller.rb:9:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering g_tipo_usuarios/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  [1m[36mGTipoUsuario Load (0.2ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/g_tipo_usuarios/index.html.erb:22
+  Rendered g_tipo_usuarios/index.html.erb within layouts/application (Duration: 3.3ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | GC: 0.3ms)
+Completed 200 OK in 9ms (Views: 6.5ms | ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/g_tipo_usuarios/1/edit" for 127.0.0.1 at 2025-07-18 02:15:33 -0400
+Processing by GTipoUsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGTipoUsuario Load (0.3ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/g_tipo_usuarios_controller.rb:48:in `set_g_tipo_usuario'
+  Rendering layout layouts/application.html.erb
+  Rendering g_tipo_usuarios/edit.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered g_tipo_usuarios/_form.html.erb (Duration: 1.7ms | GC: 0.0ms)
+  Rendered g_tipo_usuarios/edit.html.erb within layouts/application (Duration: 1.9ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | GC: 0.4ms)
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/g_tipo_usuarios" for 127.0.0.1 at 2025-07-18 02:15:34 -0400
+Processing by GTipoUsuariosController#index as HTML
+  [1m[36mGTipoUsuario Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "g_tipo_usuarios"[0m
+  ↳ app/controllers/g_tipo_usuarios_controller.rb:9:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering g_tipo_usuarios/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  [1m[36mGTipoUsuario Load (0.1ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/g_tipo_usuarios/index.html.erb:22
+  Rendered g_tipo_usuarios/index.html.erb within layouts/application (Duration: 3.1ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | GC: 0.2ms)
+Completed 200 OK in 9ms (Views: 6.6ms | ActiveRecord: 0.5ms (2 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/g_tipo_usuarios/new" for 127.0.0.1 at 2025-07-18 02:15:36 -0400
+Processing by GTipoUsuariosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering g_tipo_usuarios/new.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered g_tipo_usuarios/_form.html.erb (Duration: 2.0ms | GC: 0.0ms)
+  Rendered g_tipo_usuarios/new.html.erb within layouts/application (Duration: 2.4ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | GC: 1.0ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-18 02:15:40 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/layout/assets/js/vendor/notifications/noty.min.js.map" for 127.0.0.1 at 2025-07-18 02:15:40 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/layout/assets/js/vendor/notifications/noty.min.js.map"):
+  
+Started GET "/g_tipo_usuarios/new" for 127.0.0.1 at 2025-07-18 02:15:58 -0400
+Processing by GTipoUsuariosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering g_tipo_usuarios/new.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.8ms | GC: 0.0ms)
+  Rendered g_tipo_usuarios/_form.html.erb (Duration: 2.9ms | GC: 0.1ms)
+  Rendered g_tipo_usuarios/new.html.erb within layouts/application (Duration: 3.4ms | GC: 0.1ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | GC: 0.3ms)
+Completed 200 OK in 15ms (Views: 8.3ms | ActiveRecord: 1.8ms (0 queries, 0 cached) | GC: 1.0ms)
+
+
+Started GET "/g_tipo_usuarios" for 127.0.0.1 at 2025-07-18 02:15:59 -0400
+Processing by GTipoUsuariosController#index as HTML
+  [1m[36mGTipoUsuario Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "g_tipo_usuarios"[0m
+  ↳ app/controllers/g_tipo_usuarios_controller.rb:9:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering g_tipo_usuarios/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  [1m[36mGTipoUsuario Load (0.3ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/g_tipo_usuarios/index.html.erb:22
+  Rendered g_tipo_usuarios/index.html.erb within layouts/application (Duration: 5.3ms | GC: 0.2ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | GC: 0.2ms)
+Completed 200 OK in 12ms (Views: 9.3ms | ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/g_tipo_usuarios/new" for 127.0.0.1 at 2025-07-18 02:16:01 -0400
+Processing by GTipoUsuariosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering g_tipo_usuarios/new.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered g_tipo_usuarios/_form.html.erb (Duration: 2.7ms | GC: 0.0ms)
+  Rendered g_tipo_usuarios/new.html.erb within layouts/application (Duration: 2.9ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | GC: 0.1ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/g_tipo_usuarios" for 127.0.0.1 at 2025-07-18 02:16:02 -0400
+Processing by GTipoUsuariosController#index as HTML
+  [1m[36mGTipoUsuario Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "g_tipo_usuarios"[0m
+  ↳ app/controllers/g_tipo_usuarios_controller.rb:9:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering g_tipo_usuarios/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  [1m[36mGTipoUsuario Load (0.3ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/g_tipo_usuarios/index.html.erb:22
+  Rendered g_tipo_usuarios/index.html.erb within layouts/application (Duration: 4.1ms | GC: 0.1ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.6ms | GC: 0.5ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | GC: 2.5ms)
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.6ms (2 queries, 0 cached) | GC: 2.5ms)
+
+
+  [1m[36mCACHE ActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2879803177763566740)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+Migrating to DeviseCreateUsers (20250718061724)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (15.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp(6), "remember_created_at" timestamp(6), "nome" character varying, "cpf" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250718061724') RETURNING "version"[0m
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(2879803177763566740)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/g_tipo_usuarios" for 127.0.0.1 at 2025-07-18 02:20:27 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GTipoUsuariosController#index as HTML
+  [1m[36mGTipoUsuario Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "g_tipo_usuarios"[0m
+  ↳ app/controllers/g_tipo_usuarios_controller.rb:9:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering g_tipo_usuarios/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  [1m[36mGTipoUsuario Load (0.2ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/g_tipo_usuarios/index.html.erb:22
+  Rendered g_tipo_usuarios/index.html.erb within layouts/application (Duration: 7.7ms | GC: 0.2ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.6ms | GC: 0.2ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | GC: 0.6ms)
+Completed 200 OK in 17ms (Views: 10.9ms | ActiveRecord: 2.4ms (2 queries, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/g_tipo_usuarios" for 127.0.0.1 at 2025-07-18 02:20:34 -0400
+Processing by GTipoUsuariosController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-07-18 02:20:34 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.6ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.9ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `session_path' for an instance of #<Class:0x000078c721f9f838>):
+
+Causes:
+NoMethodError (undefined method `session_path' for an instance of #<Class:0x000078c721f9f838>)
+    1: <h2>Log in</h2>
+    2: 
+    3: <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    4:   <div class="form-inputs">
+    5:     <%= f.input :email,
+    6:                 required: false,
+  
+app/views/devise/sessions/new.html.erb:3
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2879803177763566740)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateUsers (20250718061724)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP INDEX  "index_users_on_reset_password_token"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP INDEX  "index_users_on_email"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE "users"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20250718061724'[0m
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2879803177763566740)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2879803177763566740)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateGTipoUsuarios (20250718053052)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE "g_tipo_usuarios"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20250718053052'[0m
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(2879803177763566740)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2879803177763566740)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+Migrating to CreateGTipoUsuarios (20250718053052)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (12.6ms)[0m  [1m[35mCREATE TABLE "g_tipo_usuarios" ("id" bigserial primary key, "descricao" character varying, "created_by" character varying, "updated_by" character varying, "deleted_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250718053052') RETURNING "version"[0m
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2879803177763566740)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-07-18 02:23:04 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 2.4ms (0 queries, 0 cached) | GC: 3.5ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "users" does not exist
+LINE 10:  WHERE a.attrelid = '"users"'::regclass
+                             ^
+):
+
+Causes:
+PG::UndefinedTable (ERROR:  relation "users" does not exist
+LINE 10:  WHERE a.attrelid = '"users"'::regclass
+                             ^
+)
+  
+Started GET "/" for 127.0.0.1 at 2025-07-18 02:23:05 -0400
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-07-18 02:23:05 -0400
+Processing by Devise::SessionsController#new as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 1.3ms (0 queries, 0 cached) | GC: 0.6ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "users" does not exist
+LINE 10:  WHERE a.attrelid = '"users"'::regclass
+                             ^
+):
+
+Causes:
+PG::UndefinedTable (ERROR:  relation "users" does not exist
+LINE 10:  WHERE a.attrelid = '"users"'::regclass
+                             ^
+)
+  
+  [1m[36mCACHE ActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2879803177763566740)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+Migrating to AddDeviseToUsers (20250718062310)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "email" character varying DEFAULT '' NOT NULL[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(2879803177763566740)[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2879803177763566740)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(2879803177763566740)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2879803177763566740)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+Migrating to DeviseCreateUsers (20250718062334)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (16.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp(6), "remember_created_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250718062334') RETURNING "version"[0m
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2879803177763566740)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2879803177763566740)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+Migrating to AddNomeCpfToUsers (20250718062351)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" ADD "nome" character varying[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" ADD "cpf" character varying[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "users" ADD "g_tipo_usuario_id" bigint[0m
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE INDEX "index_users_on_g_tipo_usuario_id" ON "users" ("g_tipo_usuario_id")[0m
+  [1m[35m (1.4ms)[0m  [1m[35mALTER TABLE "users" ADD CONSTRAINT "fk_rails_553e739efc"
+FOREIGN KEY ("g_tipo_usuario_id")
+  REFERENCES "g_tipo_usuarios" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250718062351') RETURNING "version"[0m
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2879803177763566740)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-07-18 02:25:04 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/dhiogo/.asdf/installs/ruby/3.3.5/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/dhiogo/.asdf/installs/ruby/3.3.5/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.9ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `session_path' for an instance of #<Class:0x000078c721b687b0>):
+
+Causes:
+NoMethodError (undefined method `session_path' for an instance of #<Class:0x000078c721b687b0>)
+    1: <h2>Log in</h2>
+    2: 
+    3: <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    4:   <div class="field">
+    5:     <%= f.label :email %><br />
+    6:     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  
+devise (4.9.4) app/views/devise/sessions/new.html.erb:3
+actionview (7.2.2.1) lib/action_view/base.rb:281:in `public_send'
+actionview (7.2.2.1) lib/action_view/base.rb:281:in `_run'
+actionview (7.2.2.1) lib/action_view/template.rb:285:in `block in render'
+activesupport (7.2.2.1) lib/active_support/notifications.rb:212:in `instrument'
+actionview (7.2.2.1) lib/action_view/template.rb:584:in `instrument_render_template'
+actionview (7.2.2.1) lib/action_view/template.rb:273:in `render'
+actionview (7.2.2.1) lib/action_view/renderer/template_renderer.rb:66:in `block (2 levels) in render_template'
+activesupport (7.2.2.1) lib/active_support/notifications.rb:210:in `block in instrument'
+activesupport (7.2.2.1) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (7.2.2.1) lib/active_support/notifications.rb:210:in `instrument'
+actionview (7.2.2.1) lib/action_view/renderer/template_renderer.rb:60:in `block in render_template'
+actionview (7.2.2.1) lib/action_view/renderer/template_renderer.rb:76:in `block in render_with_layout'
+activesupport (7.2.2.1) lib/active_support/notifications.rb:210:in `block in instrument'
+activesupport (7.2.2.1) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (7.2.2.1) lib/active_support/notifications.rb:210:in `instrument'
+actionview (7.2.2.1) lib/action_view/renderer/template_renderer.rb:75:in `render_with_layout'
+actionview (7.2.2.1) lib/action_view/renderer/template_renderer.rb:59:in `render_template'
+actionview (7.2.2.1) lib/action_view/renderer/template_renderer.rb:11:in `render'
+actionview (7.2.2.1) lib/action_view/renderer/renderer.rb:58:in `render_template_to_object'
+actionview (7.2.2.1) lib/action_view/renderer/renderer.rb:31:in `render_to_object'
+actionview (7.2.2.1) lib/action_view/rendering.rb:135:in `block in _render_template'
+actionview (7.2.2.1) lib/action_view/base.rb:308:in `in_rendering_context'
+actionview (7.2.2.1) lib/action_view/rendering.rb:134:in `_render_template'
+actionpack (7.2.2.1) lib/action_controller/metal/streaming.rb:258:in `_render_template'
+actionview (7.2.2.1) lib/action_view/rendering.rb:121:in `render_to_body'
+actionpack (7.2.2.1) lib/action_controller/metal/rendering.rb:186:in `render_to_body'
+actionpack (7.2.2.1) lib/action_controller/metal/renderers.rb:142:in `render_to_body'
+actionpack (7.2.2.1) lib/abstract_controller/rendering.rb:29:in `render'
+actionpack (7.2.2.1) lib/action_controller/metal/rendering.rb:167:in `render'
+actionpack (7.2.2.1) lib/action_controller/metal/instrumentation.rb:32:in `block (2 levels) in render'
+benchmark (0.4.0) lib/benchmark.rb:323:in `realtime'
+activesupport (7.2.2.1) lib/active_support/core_ext/benchmark.rb:14:in `ms'
+actionpack (7.2.2.1) lib/action_controller/metal/instrumentation.rb:32:in `block in render'
+actionpack (7.2.2.1) lib/action_controller/metal/instrumentation.rb:101:in `cleanup_view_runtime'
+activerecord (7.2.2.1) lib/active_record/railties/controller_runtime.rb:46:in `cleanup_view_runtime'
+actionpack (7.2.2.1) lib/action_controller/metal/instrumentation.rb:31:in `render'
+wicked_pdf (2.8.2) lib/wicked_pdf/pdf_helper.rb:18:in `render'
+responders (3.1.1) lib/action_controller/responder.rb:245:in `default_render'
+responders (3.1.1) lib/action_controller/responder.rb:175:in `to_html'
+responders (3.1.1) lib/action_controller/responder.rb:168:in `respond'
+responders (3.1.1) lib/action_controller/responder.rb:161:in `call'
+responders (3.1.1) lib/action_controller/respond_with.rb:216:in `respond_with'
+devise (4.9.4) app/controllers/devise/sessions_controller.rb:14:in `new'
+actionpack (7.2.2.1) lib/action_controller/metal/basic_implicit_render.rb:8:in `send_action'
+actionpack (7.2.2.1) lib/abstract_controller/base.rb:226:in `process_action'
+actionpack (7.2.2.1) lib/action_controller/metal/rendering.rb:193:in `process_action'
+actionpack (7.2.2.1) lib/abstract_controller/callbacks.rb:261:in `block in process_action'
+activesupport (7.2.2.1) lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+turbo-rails (2.0.11) lib/turbo-rails.rb:24:in `with_request_id'
+turbo-rails (2.0.11) app/controllers/concerns/turbo/request_id_tracking.rb:10:in `turbo_tracking_request_id'
+activesupport (7.2.2.1) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+actiontext (7.2.2.1) lib/action_text/rendering.rb:25:in `with_renderer'
+actiontext (7.2.2.1) lib/action_text/engine.rb:71:in `block (4 levels) in <class:Engine>'
+activesupport (7.2.2.1) lib/active_support/callbacks.rb:130:in `instance_exec'
+activesupport (7.2.2.1) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+activesupport (7.2.2.1) lib/active_support/callbacks.rb:141:in `run_callbacks'
+actionpack (7.2.2.1) lib/abstract_controller/callbacks.rb:260:in `process_action'
+actionpack (7.2.2.1) lib/action_controller/metal/rescue.rb:27:in `process_action'
+actionpack (7.2.2.1) lib/action_controller/metal/instrumentation.rb:77:in `block in process_action'
+activesupport (7.2.2.1) lib/active_support/notifications.rb:210:in `block in instrument'
+activesupport (7.2.2.1) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (7.2.2.1) lib/active_support/notifications.rb:210:in `instrument'
+actionpack (7.2.2.1) lib/action_controller/metal/instrumentation.rb:76:in `process_action'
+actionpack (7.2.2.1) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.2.2.1) lib/active_record/railties/controller_runtime.rb:39:in `process_action'
+actionpack (7.2.2.1) lib/abstract_controller/base.rb:163:in `process'
+actionview (7.2.2.1) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.2.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (7.2.2.1) lib/action_controller/metal.rb:335:in `dispatch'
+actionpack (7.2.2.1) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+actionpack (7.2.2.1) lib/action_dispatch/routing/route_set.rb:50:in `serve'
+actionpack (7.2.2.1) lib/action_dispatch/routing/mapper.rb:32:in `block in <class:Constraints>'
+actionpack (7.2.2.1) lib/action_dispatch/routing/mapper.rb:62:in `serve'
+actionpack (7.2.2.1) lib/action_dispatch/journey/router.rb:53:in `block in serve'
+actionpack (7.2.2.1) lib/action_dispatch/journey/router.rb:133:in `block in find_routes'
+actionpack (7.2.2.1) lib/action_dispatch/journey/router.rb:126:in `each'
+actionpack (7.2.2.1) lib/action_dispatch/journey/router.rb:126:in `find_routes'
+actionpack (7.2.2.1) lib/action_dispatch/journey/router.rb:34:in `serve'
+actionpack (7.2.2.1) lib/action_dispatch/routing/route_set.rb:896:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (3.1.8) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.1.8) lib/rack/etag.rb:29:in `call'
+rack (3.1.8) lib/rack/conditional_get.rb:31:in `call'
+rack (3.1.8) lib/rack/head.rb:15:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/http/content_security_policy.rb:38:in `call'
+rack-session (2.1.0) lib/rack/session/abstract/id.rb:274:in `context'
+rack-session (2.1.0) lib/rack/session/abstract/id.rb:268:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.2.2.1) lib/active_record/migration.rb:674:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.2.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.2.1) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.2.1) lib/rails/rack/logger.rb:29:in `call'
+sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.1.8) lib/rack/method_override.rb:28:in `call'
+rack (3.1.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (7.2.2.1) lib/rails/engine.rb:535:in `call'
+puma (6.5.0) lib/puma/configuration.rb:279:in `call'
+puma (6.5.0) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.5.0) lib/puma/thread_pool.rb:389:in `with_force_shutdown'
+puma (6.5.0) lib/puma/request.rb:98:in `handle_request'
+puma (6.5.0) lib/puma/server.rb:468:in `process_client'
+puma (6.5.0) lib/puma/server.rb:249:in `block in run'
+puma (6.5.0) lib/puma/thread_pool.rb:166:in `block in spawn_thread'
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-07-18 02:26:13 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 2.3ms (0 queries, 0 cached) | GC: 4.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `session_path' for an instance of #<Class:0x000078c7221ff6f0>):
+
+Causes:
+NoMethodError (undefined method `session_path' for an instance of #<Class:0x000078c7221ff6f0>)
+    1: <h2>Log in</h2>
+    2: 
+    3: <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    4:   <div class="form-inputs">
+    5:     <%= f.input :email,
+    6:                 required: false,
+  
+app/views/devise/sessions/new.html.erb:3
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-07-18 02:26:14 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `session_path' for an instance of #<Class:0x000078c7221ff6f0>):
+
+Causes:
+NoMethodError (undefined method `session_path' for an instance of #<Class:0x000078c7221ff6f0>)
+    1: <h2>Log in</h2>
+    2: 
+    3: <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    4:   <div class="form-inputs">
+    5:     <%= f.input :email,
+    6:                 required: false,
+  
+app/views/devise/sessions/new.html.erb:3
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-07-18 02:26:58 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 5.4ms (0 queries, 0 cached) | GC: 3.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `input' for an instance of ActionView::Helpers::FormBuilder):
+
+Causes:
+NoMethodError (undefined method `input' for an instance of ActionView::Helpers::FormBuilder)
+    1: <h2>Log in</h2>
+    2: <%= form_for(resource, as: resource_name, url: new_user_session_path) do |f| %>
+    3:   <div class="form-inputs">
+    4:     <%= f.input :email,
+    5:                 required: false,
+    6:                 autofocus: true,
+    7:                 input_html: { autocomplete: "email" } %>
+  
+app/views/devise/sessions/new.html.erb:4
+app/views/devise/sessions/new.html.erb:2
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-07-18 02:27:31 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.9ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `session_path' for an instance of #<Class:0x000078c7215bbce0>):
+
+Causes:
+NoMethodError (undefined method `session_path' for an instance of #<Class:0x000078c7215bbce0>)
+    1: <h2>Log in</h2>
+    2: <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    3:   <div class="form-inputs">
+    4:     <%= f.input :email,
+    5:                 required: false,
+  
+app/views/devise/sessions/new.html.erb:2
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-07-18 02:27:41 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 2.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `session_path' for an instance of #<Class:0x000078c721543358>):
+
+Causes:
+NoMethodError (undefined method `session_path' for an instance of #<Class:0x000078c721543358>)
+    1: <h2>Log in</h2>
+    2: <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    3:   <div class="form-inputs">
+    4:     <%= f.input :email,
+    5:                 required: false,
+  
+app/views/devise/sessions/new.html.erb:2
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-07-18 02:27:49 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 2.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `session_path' for an instance of #<Class:0x000078c7215f3348>):
+
+Causes:
+NoMethodError (undefined method `session_path' for an instance of #<Class:0x000078c7215f3348>)
+    1: <h2>Log in</h2>
+    2: <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    3:   <div class="form-inputs">
+    4:     <%= f.input :email,
+    5:                 required: false,
+  
+app/views/devise/sessions/new.html.erb:2
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-07-18 02:29:27 -0400
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.6ms | GC: 0.2ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | GC: 0.2ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.8ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `new_registration_path' for an instance of #<Class:0x000078c721a535c8>):
+
+Causes:
+NoMethodError (undefined method `new_registration_path' for an instance of #<Class:0x000078c721a535c8>)
+    3: <% end %>
+    4: 
+    5: <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
+    6:   <%= link_to "Sign up", new_registration_path(resource_name) %><br />
+    7: <% end %>
+    8: 
+    9: <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
+  
+app/views/devise/shared/_links.html.erb:6
+app/views/devise/sessions/new.html.erb:21
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-07-18 02:29:35 -0400
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.9ms | GC: 0.2ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | GC: 0.2ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 2.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `new_registration_path' for an instance of #<Class:0x000078c7215c7590>):
+
+Causes:
+NoMethodError (undefined method `new_registration_path' for an instance of #<Class:0x000078c7215c7590>)
+    3: <% end %>
+    4: 
+    5: <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
+    6:   <%= link_to "Sign up", new_registration_path(resource_name) %><br />
+    7: <% end %>
+    8: 
+    9: <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
+  
+app/views/devise/shared/_links.html.erb:6
+app/views/devise/sessions/new.html.erb:21
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-07-18 02:29:36 -0400
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `new_registration_path' for an instance of #<Class:0x000078c7215c7590>):
+
+Causes:
+NoMethodError (undefined method `new_registration_path' for an instance of #<Class:0x000078c7215c7590>)
+    3: <% end %>
+    4: 
+    5: <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
+    6:   <%= link_to "Sign up", new_registration_path(resource_name) %><br />
+    7: <% end %>
+    8: 
+    9: <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
+  
+app/views/devise/shared/_links.html.erb:6
+app/views/devise/sessions/new.html.erb:21
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-07-18 02:29:52 -0400
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.3ms | GC: 0.4ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | GC: 0.4ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.9ms (0 queries, 0 cached) | GC: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `new_registration_path' for an instance of #<Class:0x000078c721bdd218>):
+
+Causes:
+NoMethodError (undefined method `new_registration_path' for an instance of #<Class:0x000078c721bdd218>)
+    3: <% end %>
+    4: 
+    5: <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
+    6:   <%= link_to "Sign up", new_registration_path(resource_name) %><br />
+    7: <% end %>
+    8: 
+    9: <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
+  
+app/views/devise/shared/_links.html.erb:6
+app/views/devise/sessions/new.html.erb:21
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-07-18 02:30:23 -0400
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.9ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `new_registration_path' for an instance of #<Class:0x000078c7414d6238>):
+
+Causes:
+NoMethodError (undefined method `new_registration_path' for an instance of #<Class:0x000078c7414d6238>)
+    2:   <%= link_to "Log in", new_session_path(resource_name) %><br />
+    3: <% end %>
+    4: <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
+    5:   <%= link_to "Sign up", new_registration_path(resource_name) %><br />
+    6: <% end %>
+    7: <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
+    8:   <%= link_to "Forgot your password?", new_password_path(resource_name) %><br />
+  
+app/views/devise/shared/_links.html.erb:5
+app/views/devise/sessions/new.html.erb:21
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-07-18 02:30:40 -0400
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | GC: 0.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.0ms | GC: 0.3ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | GC: 0.3ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 1.8ms (0 queries, 0 cached) | GC: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `new_password_path' for an instance of #<Class:0x000078c7210d2620>):
+
+Causes:
+NoMethodError (undefined method `new_password_path' for an instance of #<Class:0x000078c7210d2620>)
+     5:   <%= link_to "Sign up", new_user_registration_path %><br />
+     6: <% end %>
+     7: <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
+     8:   <%= link_to "Forgot your password?", new_password_path(resource_name) %><br />
+     9: <% end %>
+    10: <%- if devise_mapping.confirmable? && controller_name != 'confirmations' %>
+    11:   <%= link_to "Didn't receive confirmation instructions?", new_confirmation_path(resource_name) %><br />
+  
+app/views/devise/shared/_links.html.erb:8
+app/views/devise/sessions/new.html.erb:21
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-07-18 02:30:59 -0400
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.9ms | GC: 0.1ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | GC: 0.2ms)
+Completed 200 OK in 15ms (Views: 7.8ms | ActiveRecord: 2.1ms (0 queries, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-07-18 02:31:23 -0400
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/devise_application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/devise_application (Duration: 2.7ms | GC: 0.0ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 11.0ms | GC: 0.0ms)
+Completed 200 OK in 18ms (Views: 12.2ms | ActiveRecord: 1.8ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-07-18 02:32:24 -0400
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/devise_application
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/devise_application (Duration: 2.0ms | GC: 0.0ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 5.3ms | GC: 0.0ms)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-07-18 02:33:21 -0400
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/devise_application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/devise_application (Duration: 2.6ms | GC: 0.0ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 2.8ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 1.8ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `new_password_path' for an instance of #<Class:0x000078c7214a4758>):
+
+Causes:
+NoMethodError (undefined method `new_password_path' for an instance of #<Class:0x000078c7214a4758>)
+    20:             <%= f.button :submit, "Entrar", class: "btn-submit" %>
+    21:           <% end %>
+    22:           <div class="links">
+    23:             <%= link_to "Esqueci minha senha", new_password_path(resource_name), class: "text" %>
+    24:             <%= link_to "Cadastrar-se", new_registration_path(resource_name), class: "text" %>
+    25:           </div>
+    26:         </div>
+  
+app/views/devise/sessions/new.html.erb:23
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-07-18 02:33:26 -0400
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/devise_application
+  Rendered devise/sessions/new.html.erb within layouts/devise_application (Duration: 2.2ms | GC: 0.0ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 2.5ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 2.1ms (0 queries, 0 cached) | GC: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `new_password_path' for an instance of #<Class:0x000078c7214ab418>):
+
+Causes:
+NoMethodError (undefined method `new_password_path' for an instance of #<Class:0x000078c7214ab418>)
+    19:             <%= f.button :submit, "Entrar", class: "btn-submit" %>
+    20:           <% end %>
+    21:           <div class="links">
+    22:             <%= link_to "Esqueci minha senha", new_password_path(resource_name), class: "text" %>
+    23:             <%= link_to "Cadastrar-se", new_registration_path(resource_name), class: "text" %>
+    24:           </div>
+    25:         </div>
+  
+app/views/devise/sessions/new.html.erb:22
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-07-18 02:33:27 -0400
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/devise_application
+  Rendered devise/sessions/new.html.erb within layouts/devise_application (Duration: 1.9ms | GC: 0.0ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 2.1ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `new_password_path' for an instance of #<Class:0x000078c7214ab418>):
+
+Causes:
+NoMethodError (undefined method `new_password_path' for an instance of #<Class:0x000078c7214ab418>)
+    19:             <%= f.button :submit, "Entrar", class: "btn-submit" %>
+    20:           <% end %>
+    21:           <div class="links">
+    22:             <%= link_to "Esqueci minha senha", new_password_path(resource_name), class: "text" %>
+    23:             <%= link_to "Cadastrar-se", new_registration_path(resource_name), class: "text" %>
+    24:           </div>
+    25:         </div>
+  
+app/views/devise/sessions/new.html.erb:22
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-07-18 02:33:33 -0400
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/devise_application
+  Rendered devise/sessions/new.html.erb within layouts/devise_application (Duration: 1.9ms | GC: 0.0ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 9.6ms | GC: 0.0ms)
+Completed 200 OK in 17ms (Views: 11.1ms | ActiveRecord: 1.9ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2025-07-18 02:33:53 -0400
+Processing by Users::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"[FILTERED]", "password"=>"[FILTERED]"}, "commit"=>"Entrar"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Processing by Users::SessionsController#new as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"[FILTERED]", "password"=>"[FILTERED]"}, "commit"=>"Entrar"}
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/devise_application
+  Rendered devise/sessions/new.html.erb within layouts/devise_application (Duration: 1.7ms | GC: 0.0ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 9.8ms | GC: 0.0ms)
+Completed 200 OK in 16ms (Views: 10.9ms | ActiveRecord: 1.8ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2025-07-18 02:33:54 -0400
+Processing by Users::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"[FILTERED]", "password"=>"[FILTERED]"}, "commit"=>"Entrar"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Processing by Users::SessionsController#new as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"[FILTERED]", "password"=>"[FILTERED]"}, "commit"=>"Entrar"}
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/devise_application
+  Rendered devise/sessions/new.html.erb within layouts/devise_application (Duration: 1.5ms | GC: 0.0ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 2.7ms | GC: 0.0ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-07-18 02:33:58 -0400
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/devise_application
+  Rendered devise/sessions/new.html.erb within layouts/devise_application (Duration: 2.2ms | GC: 0.2ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 2.4ms | GC: 0.2ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 1.8ms (0 queries, 0 cached) | GC: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `new_registration_path' for an instance of #<Class:0x000078c720ad85d0>):
+
+Causes:
+NoMethodError (undefined method `new_registration_path' for an instance of #<Class:0x000078c720ad85d0>)
+    18:             <%= f.input :password, placeholder: "Senha", input_html: { class: "form-control" } %>
+    19:             <%= f.button :submit, "Entrar", class: "btn-submit" %>
+    20:           <% end %>
+    21:           <%= link_to "Cadastrar-se", new_registration_path(resource_name), class: "text" %>
+    22:         </div>
+    23:       </div>
+    24:     </div>
+  
+app/views/devise/sessions/new.html.erb:21
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-07-18 02:34:12 -0400
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/devise_application
+  Rendered devise/sessions/new.html.erb within layouts/devise_application (Duration: 1.7ms | GC: 0.0ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 8.5ms | GC: 0.0ms)
+Completed 200 OK in 16ms (Views: 9.8ms | ActiveRecord: 2.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2025-07-18 02:34:13 -0400
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/devise_application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/devise_application (Duration: 3.4ms | GC: 0.0ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 3.5ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `new_session_path' for an instance of #<Class:0x000078c721a960f8>):
+
+Causes:
+NoMethodError (undefined method `new_session_path' for an instance of #<Class:0x000078c721a960f8>)
+    1: <%- if controller_name != 'sessions' %>
+    2:   <%= link_to "Log in", new_session_path(resource_name) %><br />
+    3: <% end %>
+    4: <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
+    5:   <%= link_to "Sign up", new_user_registration_path %><br />
+  
+app/views/devise/shared/_links.html.erb:2
+app/views/devise/registrations/new.html.erb:17
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-07-18 02:34:18 -0400
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/devise_application
+  Rendered devise/sessions/new.html.erb within layouts/devise_application (Duration: 1.7ms | GC: 0.0ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 3.0ms | GC: 0.0ms)
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2025-07-18 02:34:24 -0400
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/devise_application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/devise_application (Duration: 2.4ms | GC: 0.0ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 2.6ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `new_session_path' for an instance of #<Class:0x000078c721a960f8>):
+
+Causes:
+NoMethodError (undefined method `new_session_path' for an instance of #<Class:0x000078c721a960f8>)
+    1: <%- if controller_name != 'sessions' %>
+    2:   <%= link_to "Log in", new_session_path(resource_name) %><br />
+    3: <% end %>
+    4: <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
+    5:   <%= link_to "Sign up", new_user_registration_path %><br />
+  
+app/views/devise/shared/_links.html.erb:2
+app/views/devise/registrations/new.html.erb:17
+Started GET "/users/sign_up" for 127.0.0.1 at 2025-07-18 02:34:40 -0400
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/devise_application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/devise_application (Duration: 2.6ms | GC: 0.0ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 9.1ms | GC: 0.0ms)
+Completed 200 OK in 16ms (Views: 10.3ms | ActiveRecord: 2.1ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-07-18 02:34:41 -0400
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/devise_application
+  Rendered devise/sessions/new.html.erb within layouts/devise_application (Duration: 2.3ms | GC: 0.0ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 3.8ms | GC: 0.0ms)
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2025-07-18 02:34:42 -0400
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/devise_application
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/devise_application (Duration: 2.3ms | GC: 0.0ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 3.5ms | GC: 0.0ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2025-07-18 02:35:15 -0400
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/devise_application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/devise_application (Duration: 2.3ms | GC: 0.0ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 2.4ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.9ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for an instance of User):
+
+Causes:
+NoMethodError (undefined method `name' for an instance of User)
+    16:           <%= flash[:alert] %>
+    17:           <%= simple_form_for(resource, as: resource_name, url: user_registration_path) do |f| %>
+    18:             <%= render "devise/shared/error_messages", resource: resource %>
+    19:             <%= f.input :name, autofocus: true, autocomplete: "name", placeholder: "Nome", input_html: { class: "form-control" } %>
+    20:             <%= f.input :email, placeholder: "Email", input_html: { class: "form-control" } %>
+    21:             <%= f.input :password, placeholder: "Senha", input_html: { class: "form-control" } %>
+    22:             <%= f.input :password_confirmation, placeholder: "Confirmar senha", input_html: { class: "form-control" } %>
+  
+app/views/devise/registrations/new.html.erb:19
+app/views/devise/registrations/new.html.erb:17
+Started GET "/users/sign_up" for 127.0.0.1 at 2025-07-18 02:35:22 -0400
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/devise_application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered devise/shared/_links.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/devise_application (Duration: 3.5ms | GC: 0.1ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 11.1ms | GC: 0.7ms)
+Completed 200 OK in 18ms (Views: 12.3ms | ActiveRecord: 1.8ms (0 queries, 0 cached) | GC: 0.8ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-07-18 02:35:27 -0400
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/devise_application
+  Rendered devise/sessions/new.html.erb within layouts/devise_application (Duration: 2.2ms | GC: 0.0ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 3.8ms | GC: 0.0ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-07-18 02:35:30 -0400
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/devise_application
+  Rendered devise/sessions/new.html.erb within layouts/devise_application (Duration: 2.2ms | GC: 0.0ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 3.7ms | GC: 0.0ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-07-18 02:35:30 -0400
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/devise_application
+  Rendered devise/sessions/new.html.erb within layouts/devise_application (Duration: 1.6ms | GC: 0.0ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 2.8ms | GC: 0.0ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2025-07-18 02:35:35 -0400
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/devise_application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/devise_application (Duration: 3.1ms | GC: 0.0ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 10.5ms | GC: 0.0ms)
+Completed 200 OK in 17ms (Views: 11.7ms | ActiveRecord: 1.9ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-07-18 02:35:36 -0400
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/devise_application
+  Rendered devise/sessions/new.html.erb within layouts/devise_application (Duration: 1.8ms | GC: 0.0ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 3.1ms | GC: 0.0ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2025-07-18 02:36:16 -0400
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/devise_application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/devise_application (Duration: 4.1ms | GC: 0.4ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 14.2ms | GC: 2.6ms)
+Completed 200 OK in 22ms (Views: 15.5ms | ActiveRecord: 2.1ms (0 queries, 0 cached) | GC: 3.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2025-07-18 02:36:54 -0400
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/devise_application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/devise_application (Duration: 4.9ms | GC: 0.4ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 12.6ms | GC: 1.1ms)
+Completed 200 OK in 20ms (Views: 14.2ms | ActiveRecord: 1.8ms (0 queries, 0 cached) | GC: 1.3ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2025-07-18 02:36:56 -0400
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/devise_application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/devise_application (Duration: 3.1ms | GC: 0.1ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 4.4ms | GC: 0.1ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2025-07-18 02:36:56 -0400
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/devise_application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/devise_application (Duration: 3.2ms | GC: 0.2ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 4.4ms | GC: 0.2ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2025-07-18 02:38:16 -0400
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/devise_application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  [1m[36mGTipoUsuario Load (0.4ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios"[0m
+  ↳ app/views/devise/registrations/new.html.erb:21:in `collect'
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/devise_application (Duration: 9.0ms | GC: 0.0ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 16.1ms | GC: 0.0ms)
+Completed 200 OK in 23ms (Views: 16.2ms | ActiveRecord: 2.9ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGTipoUsuario Create (1.0ms)[0m  [1m[32mINSERT INTO "g_tipo_usuarios" ("descricao", "created_by", "updated_by", "deleted_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["descricao", "ADMIN"], ["created_by", nil], ["updated_by", nil], ["deleted_at", nil], ["created_at", "2025-07-18 06:39:40.398341"], ["updated_at", "2025-07-18 06:39:40.398341"]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/users/sign_up" for 127.0.0.1 at 2025-07-18 02:39:45 -0400
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/devise_application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  [1m[36mGTipoUsuario Load (0.4ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios"[0m
+  ↳ app/views/devise/registrations/new.html.erb:21:in `collect'
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/devise_application (Duration: 11.5ms | GC: 0.4ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 21.4ms | GC: 1.5ms)
+Completed 200 OK in 29ms (Views: 21.2ms | ActiveRecord: 3.5ms (1 query, 0 cached) | GC: 1.6ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2025-07-18 02:39:58 -0400
+Processing by Users::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"nome"=>"Dhiogo", "email"=>"[FILTERED]", "cpf"=>"02588772277", "g_tipo_usuario"=>"1", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Criar conta"}
+[31mUnpermitted parameters: :nome, :cpf, :g_tipo_usuario. Context: { controller: Users::RegistrationsController, action: create, request: #<ActionDispatch::Request:0x000078c720cefaa8>, params: {"authenticity_token"=>"[FILTERED]", "user"=>{"nome"=>"Dhiogo", "email"=>"[FILTERED]", "cpf"=>"02588772277", "g_tipo_usuario"=>"1", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Criar conta", "controller"=>"users/registrations", "action"=>"create"} }[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (2.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "[FILTERED]"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/devise_application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  [1m[36mGTipoUsuario Load (0.2ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios"[0m
+  ↳ app/views/devise/registrations/new.html.erb:21:in `collect'
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/devise_application (Duration: 4.9ms | GC: 0.3ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 6.0ms | GC: 0.3ms)
+Completed 422 Unprocessable Content in 178ms (Views: 6.0ms | ActiveRecord: 2.6ms (2 queries, 0 cached) | GC: 0.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2025-07-18 02:40:02 -0400
+Processing by Users::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"nome"=>"", "email"=>"[FILTERED]", "cpf"=>"", "g_tipo_usuario"=>"1", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Criar conta"}
+[31mUnpermitted parameters: :nome, :cpf, :g_tipo_usuario. Context: { controller: Users::RegistrationsController, action: create, request: #<ActionDispatch::Request:0x000078c7210c5290>, params: {"authenticity_token"=>"[FILTERED]", "user"=>{"nome"=>"", "email"=>"[FILTERED]", "cpf"=>"", "g_tipo_usuario"=>"1", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Criar conta", "controller"=>"users/registrations", "action"=>"create"} }[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "[FILTERED]"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/devise_application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  [1m[36mGTipoUsuario Load (0.2ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios"[0m
+  ↳ app/views/devise/registrations/new.html.erb:21:in `collect'
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/devise_application (Duration: 6.0ms | GC: 0.3ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 7.6ms | GC: 0.3ms)
+Completed 422 Unprocessable Content in 14ms (Views: 7.7ms | ActiveRecord: 2.1ms (2 queries, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2025-07-18 02:41:05 -0400
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/devise_application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  [1m[36mGTipoUsuario Load (0.2ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios"[0m
+  ↳ app/views/devise/registrations/new.html.erb:28:in `collect'
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/devise_application (Duration: 9.4ms | GC: 0.0ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 17.3ms | GC: 0.0ms)
+Completed 200 OK in 25ms (Views: 16.7ms | ActiveRecord: 3.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2025-07-18 02:41:15 -0400
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/devise_application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  [1m[36mGTipoUsuario Load (0.3ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios"[0m
+  ↳ app/views/devise/registrations/new.html.erb:23:in `collect'
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/devise_application (Duration: 10.8ms | GC: 1.1ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 18.4ms | GC: 2.2ms)
+Completed 200 OK in 25ms (Views: 17.8ms | ActiveRecord: 3.7ms (1 query, 0 cached) | GC: 2.6ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-07-18 02:41:19 -0400
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/devise_application
+  Rendered devise/sessions/new.html.erb within layouts/devise_application (Duration: 2.0ms | GC: 0.1ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 3.3ms | GC: 0.1ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2025-07-18 02:41:19 -0400
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/devise_application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  [1m[36mGTipoUsuario Load (0.3ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios"[0m
+  ↳ app/views/devise/registrations/new.html.erb:23:in `collect'
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/devise_application (Duration: 3.9ms | GC: 0.1ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 5.2ms | GC: 0.1ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2025-07-18 02:41:28 -0400
+Processing by Users::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"nome"=>"Dhiogo", "email"=>"[FILTERED]", "cpf"=>"02588772277", "g_tipo_usuario_id"=>"1", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Criar conta"}
+[31mUnpermitted parameters: :nome, :cpf, :g_tipo_usuario_id. Context: { controller: Users::RegistrationsController, action: create, request: #<ActionDispatch::Request:0x000078c720cb3a30>, params: {"authenticity_token"=>"[FILTERED]", "user"=>{"nome"=>"Dhiogo", "email"=>"[FILTERED]", "cpf"=>"02588772277", "g_tipo_usuario_id"=>"1", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Criar conta", "controller"=>"users/registrations", "action"=>"create"} }[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "[FILTERED]"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/devise_application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  [1m[36mGTipoUsuario Load (0.2ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios"[0m
+  ↳ app/views/devise/registrations/new.html.erb:23:in `collect'
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/devise_application (Duration: 3.3ms | GC: 0.0ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 4.6ms | GC: 0.2ms)
+Completed 422 Unprocessable Content in 172ms (Views: 4.6ms | ActiveRecord: 2.2ms (2 queries, 0 cached) | GC: 0.3ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2025-07-18 02:42:28 -0400
+Processing by Users::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"nome"=>"Dhiogo", "email"=>"[FILTERED]", "cpf"=>"02588772277", "g_tipo_usuario_id"=>"1", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Criar conta"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "[FILTERED]"], ["LIMIT", 1]]
+  [1m[36mGTipoUsuario Load (0.3ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at", "nome", "cpf", "g_tipo_usuario_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["email", "[FILTERED]"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["created_at", "2025-07-18 06:42:28.414321"], ["updated_at", "2025-07-18 06:42:28.414321"], ["nome", "Dhiogo"], ["cpf", "02588772277"], ["g_tipo_usuario_id", 1]]
+  [1m[36mTRANSACTION (4.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 192ms (ActiveRecord: 11.1ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-07-18 02:42:28 -0400
+Processing by HomeController#index as TURBO_STREAM
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (Could not render layout: undefined method `g_tipo_usuario' for an instance of Hash):
+
+Causes:
+NoMethodError (undefined method `g_tipo_usuario' for an instance of Hash)
+  
+app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+Started GET "/users/sign_up" for 127.0.0.1 at 2025-07-18 02:45:04 -0400
+Processing by Users::RegistrationsController#new as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+RuntimeError (Could not find a valid mapping for {"id"=>1, "email"=>"dhiogoandre26@gmail.com", "created_at"=>"2025-07-18T02:42:28.414-04:00", "updated_at"=>"2025-07-18T02:42:28.414-04:00", "nome"=>"Dhiogo", "cpf"=>"02588772277", "g_tipo_usuario_id"=>1}):
+  
+devise (4.9.4) lib/devise/mapping.rb:46:in `find_scope!'
+devise (4.9.4) lib/devise/controllers/store_location.rb:52:in `stored_location_key_for'
+devise (4.9.4) lib/devise/controllers/store_location.rb:19:in `stored_location_for'
+devise (4.9.4) lib/devise/controllers/helpers.rb:218:in `after_sign_in_path_for'
+devise (4.9.4) app/controllers/devise_controller.rb:130:in `require_no_authentication'
+activesupport (7.2.2.1) lib/active_support/callbacks.rb:362:in `block in make_lambda'
+activesupport (7.2.2.1) lib/active_support/callbacks.rb:179:in `block in call'
+actionpack (7.2.2.1) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.2.2.1) lib/active_support/callbacks.rb:180:in `call'
+activesupport (7.2.2.1) lib/active_support/callbacks.rb:559:in `block in invoke_before'
+activesupport (7.2.2.1) lib/active_support/callbacks.rb:559:in `each'
+activesupport (7.2.2.1) lib/active_support/callbacks.rb:559:in `invoke_before'
+activesupport (7.2.2.1) lib/active_support/callbacks.rb:119:in `block in run_callbacks'
+activesupport (7.2.2.1) lib/active_support/callbacks.rb:141:in `run_callbacks'
+actionpack (7.2.2.1) lib/abstract_controller/callbacks.rb:260:in `process_action'
+actionpack (7.2.2.1) lib/action_controller/metal/rescue.rb:27:in `process_action'
+actionpack (7.2.2.1) lib/action_controller/metal/instrumentation.rb:77:in `block in process_action'
+activesupport (7.2.2.1) lib/active_support/notifications.rb:210:in `block in instrument'
+activesupport (7.2.2.1) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (7.2.2.1) lib/active_support/notifications.rb:210:in `instrument'
+actionpack (7.2.2.1) lib/action_controller/metal/instrumentation.rb:76:in `process_action'
+actionpack (7.2.2.1) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.2.2.1) lib/active_record/railties/controller_runtime.rb:39:in `process_action'
+actionpack (7.2.2.1) lib/abstract_controller/base.rb:163:in `process'
+actionview (7.2.2.1) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.2.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (7.2.2.1) lib/action_controller/metal.rb:335:in `dispatch'
+actionpack (7.2.2.1) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+actionpack (7.2.2.1) lib/action_dispatch/routing/route_set.rb:50:in `serve'
+actionpack (7.2.2.1) lib/action_dispatch/routing/mapper.rb:32:in `block in <class:Constraints>'
+actionpack (7.2.2.1) lib/action_dispatch/routing/mapper.rb:62:in `serve'
+actionpack (7.2.2.1) lib/action_dispatch/journey/router.rb:53:in `block in serve'
+actionpack (7.2.2.1) lib/action_dispatch/journey/router.rb:133:in `block in find_routes'
+actionpack (7.2.2.1) lib/action_dispatch/journey/router.rb:126:in `each'
+actionpack (7.2.2.1) lib/action_dispatch/journey/router.rb:126:in `find_routes'
+actionpack (7.2.2.1) lib/action_dispatch/journey/router.rb:34:in `serve'
+actionpack (7.2.2.1) lib/action_dispatch/routing/route_set.rb:896:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (3.1.8) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.1.8) lib/rack/etag.rb:29:in `call'
+rack (3.1.8) lib/rack/conditional_get.rb:31:in `call'
+rack (3.1.8) lib/rack/head.rb:15:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/http/content_security_policy.rb:38:in `call'
+rack-session (2.1.0) lib/rack/session/abstract/id.rb:274:in `context'
+rack-session (2.1.0) lib/rack/session/abstract/id.rb:268:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.2.2.1) lib/active_record/migration.rb:674:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.2.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.2.1) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.2.1) lib/rails/rack/logger.rb:29:in `call'
+sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.1.8) lib/rack/method_override.rb:28:in `call'
+rack (3.1.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (7.2.2.1) lib/rails/engine.rb:535:in `call'
+puma (6.5.0) lib/puma/configuration.rb:279:in `call'
+puma (6.5.0) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.5.0) lib/puma/thread_pool.rb:389:in `with_force_shutdown'
+puma (6.5.0) lib/puma/request.rb:98:in `handle_request'
+puma (6.5.0) lib/puma/server.rb:468:in `process_client'
+puma (6.5.0) lib/puma/server.rb:249:in `block in run'
+puma (6.5.0) lib/puma/thread_pool.rb:166:in `block in spawn_thread'
+Started GET "/users/sign_up" for 127.0.0.1 at 2025-07-18 02:45:07 -0400
+Processing by Users::RegistrationsController#new as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+RuntimeError (Could not find a valid mapping for {"id"=>1, "email"=>"dhiogoandre26@gmail.com", "created_at"=>"2025-07-18T02:42:28.414-04:00", "updated_at"=>"2025-07-18T02:42:28.414-04:00", "nome"=>"Dhiogo", "cpf"=>"02588772277", "g_tipo_usuario_id"=>1}):
+  
+devise (4.9.4) lib/devise/mapping.rb:46:in `find_scope!'
+devise (4.9.4) lib/devise/controllers/store_location.rb:52:in `stored_location_key_for'
+devise (4.9.4) lib/devise/controllers/store_location.rb:19:in `stored_location_for'
+devise (4.9.4) lib/devise/controllers/helpers.rb:218:in `after_sign_in_path_for'
+devise (4.9.4) app/controllers/devise_controller.rb:130:in `require_no_authentication'
+activesupport (7.2.2.1) lib/active_support/callbacks.rb:362:in `block in make_lambda'
+activesupport (7.2.2.1) lib/active_support/callbacks.rb:179:in `block in call'
+actionpack (7.2.2.1) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.2.2.1) lib/active_support/callbacks.rb:180:in `call'
+activesupport (7.2.2.1) lib/active_support/callbacks.rb:559:in `block in invoke_before'
+activesupport (7.2.2.1) lib/active_support/callbacks.rb:559:in `each'
+activesupport (7.2.2.1) lib/active_support/callbacks.rb:559:in `invoke_before'
+activesupport (7.2.2.1) lib/active_support/callbacks.rb:119:in `block in run_callbacks'
+activesupport (7.2.2.1) lib/active_support/callbacks.rb:141:in `run_callbacks'
+actionpack (7.2.2.1) lib/abstract_controller/callbacks.rb:260:in `process_action'
+actionpack (7.2.2.1) lib/action_controller/metal/rescue.rb:27:in `process_action'
+actionpack (7.2.2.1) lib/action_controller/metal/instrumentation.rb:77:in `block in process_action'
+activesupport (7.2.2.1) lib/active_support/notifications.rb:210:in `block in instrument'
+activesupport (7.2.2.1) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (7.2.2.1) lib/active_support/notifications.rb:210:in `instrument'
+actionpack (7.2.2.1) lib/action_controller/metal/instrumentation.rb:76:in `process_action'
+actionpack (7.2.2.1) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.2.2.1) lib/active_record/railties/controller_runtime.rb:39:in `process_action'
+actionpack (7.2.2.1) lib/abstract_controller/base.rb:163:in `process'
+actionview (7.2.2.1) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.2.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (7.2.2.1) lib/action_controller/metal.rb:335:in `dispatch'
+actionpack (7.2.2.1) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+actionpack (7.2.2.1) lib/action_dispatch/routing/route_set.rb:50:in `serve'
+actionpack (7.2.2.1) lib/action_dispatch/routing/mapper.rb:32:in `block in <class:Constraints>'
+actionpack (7.2.2.1) lib/action_dispatch/routing/mapper.rb:62:in `serve'
+actionpack (7.2.2.1) lib/action_dispatch/journey/router.rb:53:in `block in serve'
+actionpack (7.2.2.1) lib/action_dispatch/journey/router.rb:133:in `block in find_routes'
+actionpack (7.2.2.1) lib/action_dispatch/journey/router.rb:126:in `each'
+actionpack (7.2.2.1) lib/action_dispatch/journey/router.rb:126:in `find_routes'
+actionpack (7.2.2.1) lib/action_dispatch/journey/router.rb:34:in `serve'
+actionpack (7.2.2.1) lib/action_dispatch/routing/route_set.rb:896:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (3.1.8) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.1.8) lib/rack/etag.rb:29:in `call'
+rack (3.1.8) lib/rack/conditional_get.rb:31:in `call'
+rack (3.1.8) lib/rack/head.rb:15:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/http/content_security_policy.rb:38:in `call'
+rack-session (2.1.0) lib/rack/session/abstract/id.rb:274:in `context'
+rack-session (2.1.0) lib/rack/session/abstract/id.rb:268:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.2.2.1) lib/active_record/migration.rb:674:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.2.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.2.1) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.2.1) lib/rails/rack/logger.rb:29:in `call'
+sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.1.8) lib/rack/method_override.rb:28:in `call'
+rack (3.1.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (7.2.2.1) lib/rails/engine.rb:535:in `call'
+puma (6.5.0) lib/puma/configuration.rb:279:in `call'
+puma (6.5.0) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.5.0) lib/puma/thread_pool.rb:389:in `with_force_shutdown'
+puma (6.5.0) lib/puma/request.rb:98:in `handle_request'
+puma (6.5.0) lib/puma/server.rb:468:in `process_client'
+puma (6.5.0) lib/puma/server.rb:249:in `block in run'
+puma (6.5.0) lib/puma/thread_pool.rb:166:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2025-07-18 02:48:03 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+NameError (uninitialized constant ApplicationController::DevisePermitedParameters):
+  
+app/controllers/application_controller.rb:4:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/home_controller.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2025-07-18 02:48:17 -0400
+  
+NameError (uninitialized constant ApplicationController::DevisePermitedParameters):
+  
+app/controllers/application_controller.rb:4:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/home_controller.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2025-07-18 02:48:44 -0400
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-07-18 02:48:44 -0400
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/devise_application
+  Rendered devise/sessions/new.html.erb within layouts/devise_application (Duration: 21.8ms | GC: 11.8ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 85.9ms | GC: 13.3ms)
+Completed 200 OK in 153ms (Views: 92.5ms | ActiveRecord: 13.1ms (0 queries, 0 cached) | GC: 53.1ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2025-07-18 02:48:46 -0400
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/devise_application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  [1m[36mGTipoUsuario Load (0.6ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios"[0m
+  ↳ app/views/devise/registrations/new.html.erb:23:in `collect'
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/devise_application (Duration: 30.6ms | GC: 11.4ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 32.8ms | GC: 12.0ms)
+Completed 200 OK in 34ms (Views: 30.4ms | ActiveRecord: 3.0ms (1 query, 0 cached) | GC: 12.0ms)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for pp */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Delete All (2.9ms)[0m  [1m[31mDELETE FROM "users"[0m
+Started GET "/users/sign_up" for 127.0.0.1 at 2025-07-18 02:49:04 -0400
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/devise_application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  [1m[36mGTipoUsuario Load (0.3ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios"[0m
+  ↳ app/views/devise/registrations/new.html.erb:23:in `collect'
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/devise_application (Duration: 4.2ms | GC: 0.4ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 5.4ms | GC: 0.4ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2025-07-18 02:49:14 -0400
+Processing by Users::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"nome"=>"Dhiogo", "email"=>"[FILTERED]", "cpf"=>"02588772277", "g_tipo_usuario_id"=>"1", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Criar conta"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "[FILTERED]"], ["LIMIT", 1]]
+  [1m[36mGTipoUsuario Load (0.1ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at", "nome", "cpf", "g_tipo_usuario_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["email", "[FILTERED]"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["created_at", "2025-07-18 06:49:14.188584"], ["updated_at", "2025-07-18 06:49:14.188584"], ["nome", "Dhiogo"], ["cpf", "02588772277"], ["g_tipo_usuario_id", 1]]
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 179ms (ActiveRecord: 5.3ms (3 queries, 0 cached) | GC: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-07-18 02:49:14 -0400
+Processing by HomeController#index as TURBO_STREAM
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGTipoUsuario Load (0.2ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 2.3ms | GC: 1.8ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 2.0ms | GC: 1.6ms)
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | GC: 14.9ms)
+Completed 200 OK in 30ms (Views: 24.4ms | ActiveRecord: 1.0ms (2 queries, 0 cached) | GC: 19.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-07-18 02:49:14 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGTipoUsuario Load (0.2ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 1.8ms | GC: 1.6ms)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | GC: 8.7ms)
+Completed 200 OK in 24ms (Views: 15.0ms | ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 16.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-07-18 02:50:40 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGTipoUsuario Load (0.1ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | GC: 0.0ms)
+Completed 200 OK in 20ms (Views: 9.3ms | ActiveRecord: 4.1ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2025-07-18 02:50:42 -0400
+Processing by Users::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 5ms (ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-07-18 02:50:42 -0400
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-07-18 02:50:42 -0400
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/devise_application
+  Rendered devise/sessions/new.html.erb within layouts/devise_application (Duration: 2.5ms | GC: 0.0ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 9.9ms | GC: 0.0ms)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2025-07-18 02:50:45 -0400
+Processing by Users::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"[FILTERED]", "password"=>"[FILTERED]"}, "commit"=>"Entrar"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "[FILTERED]"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Processing by Users::SessionsController#new as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"[FILTERED]", "password"=>"[FILTERED]"}, "commit"=>"Entrar"}
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/devise_application
+  Rendered devise/sessions/new.html.erb within layouts/devise_application (Duration: 2.1ms | GC: 0.0ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 3.5ms | GC: 0.0ms)
+Completed 200 OK in 164ms (Views: 3.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2025-07-18 02:50:48 -0400
+Processing by Users::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"[FILTERED]", "password"=>"[FILTERED]"}, "commit"=>"Entrar"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "[FILTERED]"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Processing by Users::SessionsController#new as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"[FILTERED]", "password"=>"[FILTERED]"}, "commit"=>"Entrar"}
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/devise_application
+  Rendered devise/sessions/new.html.erb within layouts/devise_application (Duration: 2.2ms | GC: 0.5ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 3.4ms | GC: 0.5ms)
+Completed 200 OK in 166ms (Views: 3.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2025-07-18 02:50:51 -0400
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/devise_application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  [1m[36mGTipoUsuario Load (0.3ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios"[0m
+  ↳ app/views/devise/registrations/new.html.erb:23:in `collect'
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/devise_application (Duration: 6.2ms | GC: 0.4ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 8.5ms | GC: 0.8ms)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.8ms)
+
+
+  [1m[36mUser Delete All (2.6ms)[0m  [1m[31mDELETE FROM "users"[0m
+Started POST "/users" for 127.0.0.1 at 2025-07-18 02:51:12 -0400
+Processing by Users::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"nome"=>"Dhiogo", "email"=>"[FILTERED]", "cpf"=>"02588772277", "g_tipo_usuario_id"=>"1", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Criar conta"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "[FILTERED]"], ["LIMIT", 1]]
+  [1m[36mGTipoUsuario Load (0.1ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at", "nome", "cpf", "g_tipo_usuario_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["email", "[FILTERED]"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["created_at", "2025-07-18 06:51:12.774116"], ["updated_at", "2025-07-18 06:51:12.774116"], ["nome", "Dhiogo"], ["cpf", "02588772277"], ["g_tipo_usuario_id", 1]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 171ms (ActiveRecord: 3.5ms (3 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-07-18 02:51:12 -0400
+Processing by HomeController#index as TURBO_STREAM
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mGTipoUsuario Load (0.1ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | GC: 0.0ms)
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-07-18 02:51:12 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mGTipoUsuario Load (0.1ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | GC: 0.0ms)
+Completed 200 OK in 8ms (Views: 4.7ms | ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2025-07-18 02:51:14 -0400
+Processing by Users::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 4ms (ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-07-18 02:51:14 -0400
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-07-18 02:51:14 -0400
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/devise_application
+  Rendered devise/sessions/new.html.erb within layouts/devise_application (Duration: 1.3ms | GC: 0.0ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 2.4ms | GC: 0.0ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2025-07-18 02:51:20 -0400
+Processing by Users::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"[FILTERED]", "password"=>"[FILTERED]"}, "commit"=>"Entrar"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "[FILTERED]"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 166ms (ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-07-18 02:51:20 -0400
+Processing by HomeController#index as TURBO_STREAM
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mGTipoUsuario Load (0.1ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | GC: 7.0ms)
+Completed 200 OK in 14ms (Views: 11.4ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 7.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-07-18 02:51:20 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mGTipoUsuario Load (0.1ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | GC: 0.9ms)
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 0.9ms)
+
+

@@ -18,10 +18,10 @@ module LayoutByUser
       case current_user.g_tipo_usuario.descricao
       when 'ADMIN'
         "application"
-      when 'TUTOR'
-        "tutor_application"
+      when 'PROFESSOR'
+        "professor_application"
       else
-        "application"
+        "home"
       end
     end
   end

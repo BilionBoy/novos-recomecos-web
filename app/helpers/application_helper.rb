@@ -10,7 +10,7 @@ module ApplicationHelper
     text = form.object.new_record? ? 'Incluir' : 'Atualizar'
     icon_class = 'ph-paper-plane-tilt ms-1'
 
-    button_tag(type: 'submit', class: 'btn btn-primary') do
+    button_tag(type: 'submit', class: 'btn btn-success') do
       safe_join([text, content_tag(:i, '', class: icon_class)])
     end
   end
