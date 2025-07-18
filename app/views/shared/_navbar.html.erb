@@ -21,6 +21,10 @@
           <span class="d-none d-xl-inline text-white">Olá, Dhiogo</span>
         </a>
         <div id="userMenu" class="custom-dropdown-menu">
+          <%= button_to '<i class="ph-sign-out me-2"></i>Sair'.html_safe,
+              destroy_user_session_path,
+              method: :delete,
+              class: "btn btn-logout" %>
         </div>
       </li>
     </ul>

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  resources :g_tipo_usuarios
+devise_for :users, controllers: {  registrations: 'users/registrations',  sessions: 'users/sessions' }  
+resources :g_tipo_usuarios
   root 'home#index'
   get 'home/index'
 
