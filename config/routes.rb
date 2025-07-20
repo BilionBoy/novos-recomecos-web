@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-devise_for :users, controllers: {  registrations: 'users/registrations',  sessions: 'users/sessions' }  
-resources :g_tipo_usuarios
-  root 'home#index'
-  get 'home/index'
+  devise_for :users, controllers: {  registrations: 'users/registrations',  sessions: 'users/sessions' }  
+  resources :g_tipo_usuarios
+  root 'g_admin#index'
+  get  "g_admin/index"
 
   # Rotas Scaffold
 
