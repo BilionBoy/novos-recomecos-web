@@ -16,9 +16,8 @@
     <!-- Usuário / Logout -->
     <ul class="navbar-nav ms-auto align-items-center">
       <li class="nav-item dropdown nav-item-dropdown-lg position-relative">
-        <a href="#" class="nav-link d-flex align-items-center gap-2 text-white px-3 py-2 rounded-pill bg-dark bg-opacity-25" id="userMenuToggle">
-          <i class="ph-user-circle fs-4"></i>
-          <span class="d-none d-xl-inline text-white">Olá, Dhiogo</span>
+        <a href="#" class="nav-link user-menu d-flex align-items-center gap-2 text-white px-3 py-2 rounded bg-dark bg-opacity-25" id="userMenuToggle">
+          <span class="d-none d-xl-inline">Olá, <%= current_user&.nome %></span>
         </a>
         <div id="userMenu" class="custom-dropdown-menu">
           <%= button_to '<i class="ph-sign-out me-2"></i>Sair'.html_safe,
@@ -31,6 +30,30 @@
   </div>
 </div>
 <style>
+  .user-menu {
+  background-color: rgba(33, 37, 41, 0.5); /* tom escuro semi-transparente */
+  border-radius: 1.5rem; /* borda mais arredondada */
+  padding: 0.4rem 1.2rem; /* espaçamento um pouco menor para ficar mais compacto */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  gap: 0.5rem; /* espaço menor entre ícone e texto */
+  }
+
+  .user-menu i {
+  color: #f8f9fa; /* cor branca suave para o ícone */
+  }
+
+  .user-menu:hover {
+  background-color: rgba(33, 37, 41, 0.8); /* escurecer ao passar o mouse */
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+  text-decoration: none; /* tirar underline no hover */
+  }
+
+  .user-menu span {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #f8f9fa;
+  }
+
   .custom-dropdown-menu {
     display: none;
     position: absolute;
