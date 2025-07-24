@@ -10,9 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2025_07_24_095919) do
+ActiveRecord::Schema[7.2].define(version: 2025_07_24_100955) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "a_unidade_treinamentos", force: :cascade do |t|
+    t.string "descricao"
+    t.bigint "a_zona_treinamento_id"
+    t.string "created_by"
+    t.string "updated_by"
+    t.datetime "deleted_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["a_zona_treinamento_id"], name: "index_a_unidade_treinamentos_on_a_zona_treinamento_id"
+  end
 
   create_table "a_zona_treinamentos", force: :cascade do |t|
     t.string "descricao"
@@ -68,6 +79,7 @@ ActiveRecord::Schema[7.2].define(version: 2025_07_24_095919) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "a_unidade_treinamentos", "a_zona_treinamentos"
   add_foreign_key "g_cidades", "g_estados"
   add_foreign_key "users", "g_tipo_usuarios"
 end

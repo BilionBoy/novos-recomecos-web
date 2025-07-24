@@ -26,6 +26,9 @@ pt-BR:
       a_zona_treinamento:
         one: "Zona de Treinamento"
         other: "Zonas de Treinamento"
+      a_unidade_treinamento:
+        one: "Unidade de Treinamento"
+        other: "Unidades de Treinamento"
     attributes:
       g_tipo_usuario:
         descricao: "Descrição"
@@ -36,6 +39,9 @@ pt-BR:
         g_estado_id: "Estado"
       a_zona_treinamento:
         descricao: "Descrição"
+      a_unidade_treinamento:
+        descricao: "Descrição"
+        a_zona_treinamento_id: "Zona de Treinamento"
     errors:
       messages:
         record_invalid: "A validação falhou: %{errors}"

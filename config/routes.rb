@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   
   # Rotas Scaffold
   resources :a_zona_treinamentos
+  resources :a_unidade_treinamentos
   resources :g_tipo_usuarios
   resources :g_estados
   resources :g_cidades
