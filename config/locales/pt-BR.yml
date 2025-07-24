@@ -11,30 +11,23 @@ pt-BR:
 
   activerecord:
     models:
+      user:
+        one: "Usuário"
+        other: "Usuários"
       g_tipo_usuario:
         one: "Tipo de Usuário"
         other: "Tipos de Usuário"
+      g_estado:
+        one: "Estado"
+        other: "Estados"
+      g_cidade:
+        one: "Cidade"
+        other: "Cidades"
     attributes:
-      funcao:
-        nome: "Nome"
+      g_tipo_usuario:
         descricao: "Descrição"
-      estabelecimento:
-        nome: "Nome"
-        cnpj: "CNPJ"
-        endereco: "Endereço"
-        telefone: "Telefone"
-      user_estabelecimento:
-        nome: "Usuário"
-        estabelecimento: "Estabelecimento"
-      categoria:
-        nome: "Nome"
-        descricao: "Descrição"
-      produto:
-        nome: "Nome"
-        descricao: "Descrição"
-        preco: "Preço"
-        categoria: "Categoria"
-        quantidade_estoque: "Quantidade em Estoque"
+      g_estado:
+        nome_fantasia: "Nome Fantasia"
     errors:
       messages:
         record_invalid: "A validação falhou: %{errors}"
