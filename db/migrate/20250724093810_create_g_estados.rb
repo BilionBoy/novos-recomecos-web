@@ -4,10 +4,9 @@ class CreateGEstados < ActiveRecord::Migration[7.2]
   def up
     unless table_exists?(:g_estados)
      create_table :g_estados do |t|
-       t.string :nome_fantasia
-           
-       t.string :created_by
-       t.string :updated_by
+       t.string   :nome_fantasia
+       t.string   :created_by
+       t.string   :updated_by
        t.datetime :deleted_at
        t.timestamps
      end
