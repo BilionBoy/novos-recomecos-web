@@ -23,11 +23,19 @@ pt-BR:
       g_cidade:
         one: "Cidade"
         other: "Cidades"
+      a_zona_treinamento:
+        one: "Zona de Treinamento"
+        other: "Zonas de Treinamento"
     attributes:
       g_tipo_usuario:
         descricao: "Descrição"
       g_estado:
         nome_fantasia: "Nome Fantasia"
+      g_cidade:
+        nome_fantasia: "Nome Fantasia"
+        g_estado_id: "Estado"
+      a_zona_treinamento:
+        descricao: "Descrição"
     errors:
       messages:
         record_invalid: "A validação falhou: %{errors}"

@@ -17,10 +17,11 @@
     <!-- Lista de navegação -->
     <ul class="nav flex-column pt-2 px-2" id="sidebar-items">
       <% sidebar_items = [
-       { path: root_path,                                   icon: 'ph-house',                     label: 'Home' },
-       { path: g_tipo_usuarios_path,                        icon: 'ph-users',                     label: 'Tipos de Usuários'  }, # ability: [:read, ] },,  
-       { path: g_estados_path,                              icon: 'ph-chart-bar',                 label: 'Estados'  }, 
-       { path: g_cidades_path,                              icon: 'ph-cards',                     label: 'Cidades',   }   
+       { path: root_path,                                               icon: 'ph-house',                          label: 'Home' },
+       { path: g_tipo_usuarios_path,                                    icon: 'ph-users',                          label: 'Tipos de Usuários'  }, # ability: [:read, ] },,  
+       { path: g_estados_path,                                          icon: 'ph-chart-bar',                      label: 'Estados'  }, 
+       { path: g_cidades_path,                                          icon: 'ph-cards',                          label: 'Cidades'   },
+       { path: a_zona_treinamentos_path,                                icon: 'ph-flow-arrow',                     label: 'Zona de Treinamento'   }   
 
       ] %>
       <% sidebar_items.each do |item| %>
