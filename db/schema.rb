@@ -10,9 +10,53 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2025_07_24_100955) do
+ActiveRecord::Schema[7.2].define(version: 2025_07_26_174610) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "a_atletas", force: :cascade do |t|
+    t.string "nome"
+    t.string "cpf"
+    t.date "data_nascimento"
+    t.string "contato1"
+    t.string "contato2"
+    t.string "nacionalidade"
+    t.string "nome_pai"
+    t.string "nome_mae"
+    t.string "responsavel_nome"
+    t.string "responsavel_cpf"
+    t.string "responsavel_rg"
+    t.text "responsavel_orientacao"
+    t.boolean "portador_necessidade"
+    t.text "descricao_necessidade"
+    t.string "cep"
+    t.string "rua"
+    t.string "bairro"
+    t.string "numero"
+    t.string "complemento"
+    t.bigint "g_estado_id"
+    t.bigint "g_cidade_id"
+    t.bigint "a_unidade_treinamento_id"
+    t.bigint "a_sexo_id"
+    t.string "created_by"
+    t.string "updated_by"
+    t.datetime "deleted_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["a_sexo_id"], name: "index_a_atletas_on_a_sexo_id"
+    t.index ["a_unidade_treinamento_id"], name: "index_a_atletas_on_a_unidade_treinamento_id"
+    t.index ["g_cidade_id"], name: "index_a_atletas_on_g_cidade_id"
+    t.index ["g_estado_id"], name: "index_a_atletas_on_g_estado_id"
+  end
+
+  create_table "a_sexos", force: :cascade do |t|
+    t.string "descricao"
+    t.string "created_by"
+    t.string "updated_by"
+    t.datetime "deleted_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "a_unidade_treinamentos", force: :cascade do |t|
     t.string "descricao"
@@ -79,6 +123,10 @@ ActiveRecord::Schema[7.2].define(version: 2025_07_24_100955) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "a_atletas", "a_sexos"
+  add_foreign_key "a_atletas", "a_unidade_treinamentos"
+  add_foreign_key "a_atletas", "g_cidades"
+  add_foreign_key "a_atletas", "g_estados"
   add_foreign_key "a_unidade_treinamentos", "a_zona_treinamentos"
   add_foreign_key "g_cidades", "g_estados"
   add_foreign_key "users", "g_tipo_usuarios"

@@ -8,5 +8,5 @@ ActiveSupport::Inflector.inflections(:en) do |inflect|
   inflect.irregular 'a_zona_treinamento',    'a_zona_treinamentos'
   inflect.irregular 'a_unidade_treinamento', 'a_unidade_treinamentos'
   inflect.irregular 'a_atleta',              'a_atletas'
-  
+  inflect.irregular 'a_sexo',                'a_sexos'
 end

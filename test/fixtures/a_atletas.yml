@@ -1,0 +1,57 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  cpf: MyString
+  data_nascimento: 2025-07-26
+  contato1: MyString
+  contato2: MyString
+  nacionalidade: MyString
+  nome_pai: MyString
+  nome_mae: MyString
+  responsavel_nome: MyString
+  responsavel_cpf: MyString
+  responsavel_rg: MyString
+  responsavel_orientacao: MyText
+  portador_necessidade: false
+  descricao_necessidade: MyText
+  cep: MyString
+  rua: MyString
+  bairro: MyString
+  numero: MyString
+  complemento: MyString
+  g_estado: one
+  g_cidade: one
+  a_unidade_treinamento: one
+  a_sexo: one
+  created_by: MyString
+  updated_by: MyString
+  deleted_at: 2025-07-26 13:46:10
+
+two:
+  nome: MyString
+  cpf: MyString
+  data_nascimento: 2025-07-26
+  contato1: MyString
+  contato2: MyString
+  nacionalidade: MyString
+  nome_pai: MyString
+  nome_mae: MyString
+  responsavel_nome: MyString
+  responsavel_cpf: MyString
+  responsavel_rg: MyString
+  responsavel_orientacao: MyText
+  portador_necessidade: false
+  descricao_necessidade: MyText
+  cep: MyString
+  rua: MyString
+  bairro: MyString
+  numero: MyString
+  complemento: MyString
+  g_estado: two
+  g_cidade: two
+  a_unidade_treinamento: two
+  a_sexo: two
+  created_by: MyString
+  updated_by: MyString
+  deleted_at: 2025-07-26 13:46:10

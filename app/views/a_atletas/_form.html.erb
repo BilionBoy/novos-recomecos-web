@@ -1,0 +1,92 @@
+<%= render "shared/context_nav", title: t("activerecord.models.#{AAtleta.model_name.i18n_key}.other") do  %>
+  <span class="breadcrumb-item"><%= link_to t("activerecord.models.#{AAtleta.model_name.i18n_key}.other"), a_atletas_path, class: "text-dark" %></span>
+  <span class="breadcrumb-item active"><%= t("helpers.submit.#{params[:action]}") %></span>
+<% end %>
+<%= simple_form_for(@a_atleta) do |f| %>
+  <div class="card">
+    <div class="card-header">
+      <h5 class="my-0">
+        <%= @a_atleta.new_record? ? "Incluir " : "Editar " %><%= t("activerecord.models.#{AAtleta.model_name.i18n_key}.one") %>
+      </h5>
+    </div>
+    <div class="card-body">
+      <%= f.error_notification %>
+      <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+      <div class="row">
+        <div class="col-12">
+          <%= f.input :nome, input_html: { class: "capitalize"}, placeholder: "Nome"  %>
+        </div>
+        <div class="col-12">
+          <%= f.input :cpf, input_html: { class: "capitalize"}, placeholder: "Cpf"  %>
+        </div>
+        <div class="col-12">
+          <%= f.input :data_nascimento, input_html: { class: "capitalize"}, placeholder: "Data nascimento"  %>
+        </div>
+        <div class="col-12">
+          <%= f.input :contato1, input_html: { class: "capitalize"}, placeholder: "Contato1"  %>
+        </div>
+        <div class="col-12">
+          <%= f.input :contato2, input_html: { class: "capitalize"}, placeholder: "Contato2"  %>
+        </div>
+        <div class="col-12">
+          <%= f.input :nacionalidade, input_html: { class: "capitalize"}, placeholder: "Nacionalidade"  %>
+        </div>
+        <div class="col-12">
+          <%= f.input :nome_pai, input_html: { class: "capitalize"}, placeholder: "Nome pai"  %>
+        </div>
+        <div class="col-12">
+          <%= f.input :nome_mae, input_html: { class: "capitalize"}, placeholder: "Nome mae"  %>
+        </div>
+        <div class="col-12">
+          <%= f.input :responsavel_nome, input_html: { class: "capitalize"}, placeholder: "Responsavel nome"  %>
+        </div>
+        <div class="col-12">
+          <%= f.input :responsavel_cpf, input_html: { class: "capitalize"}, placeholder: "Responsavel cpf"  %>
+        </div>
+        <div class="col-12">
+          <%= f.input :responsavel_rg, input_html: { class: "capitalize"}, placeholder: "Responsavel rg"  %>
+        </div>
+        <div class="col-12">
+          <%= f.input :responsavel_orientacao, input_html: { class: "capitalize"}, placeholder: "Responsavel orientacao"  %>
+        </div>
+        <div class="col-12">
+          <%= f.input :portador_necessidade, input_html: { class: "capitalize"}, placeholder: "Portador necessidade"  %>
+        </div>
+        <div class="col-12">
+          <%= f.input :descricao_necessidade, input_html: { class: "capitalize"}, placeholder: "Descricao necessidade"  %>
+        </div>
+        <div class="col-12">
+          <%= f.input :cep, input_html: { class: "capitalize"}, placeholder: "Cep"  %>
+        </div>
+        <div class="col-12">
+          <%= f.input :rua, input_html: { class: "capitalize"}, placeholder: "Rua"  %>
+        </div>
+        <div class="col-12">
+          <%= f.input :bairro, input_html: { class: "capitalize"}, placeholder: "Bairro"  %>
+        </div>
+        <div class="col-12">
+          <%= f.input :numero, input_html: { class: "capitalize"}, placeholder: "Numero"  %>
+        </div>
+        <div class="col-12">
+          <%= f.input :complemento, input_html: { class: "capitalize"}, placeholder: "Complemento"  %>
+        </div>
+        <div class="col-12">
+          <%= f.association :g_estado, input_html: { class: "capitalize"}, placeholder: "G estado"  %>
+        </div>
+        <div class="col-12">
+          <%= f.association :g_cidade, input_html: { class: "capitalize"}, placeholder: "G cidade"  %>
+        </div>
+        <div class="col-12">
+          <%= f.association :a_unidade_treinamento, input_html: { class: "capitalize"}, placeholder: "A unidade treinamento"  %>
+        </div>
+        <div class="col-12">
+          <%= f.association :a_sexo, input_html: { class: "capitalize"}, placeholder: "A sexo"  %>
+        </div>
+      </div>
+    </div>
+    <div class="card-footer">
+      <%= btn_submit(f) %>
+      <%= link_to "Voltar", a_atletas_path, class: "btn btn-light" %>
+    </div>
+  </div>
+<% end %>

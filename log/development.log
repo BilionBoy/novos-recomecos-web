@@ -29226,3 +29226,696 @@ Processing by AZonaTreinamentosController#index as HTML
 Completed 200 OK in 11ms (Views: 6.9ms | ActiveRecord: 0.7ms (4 queries, 0 cached) | GC: 1.3ms)
 
 
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2879803177763566740)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+Migrating to CreateAAtletas (20250726173552)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (26.5ms)[0m  [1m[35mCREATE TABLE "a_atletas" ("id" bigserial primary key, "nome" character varying, "cpf" character varying, "data_nascimento" date, "contato1" character varying, "contato2" character varying, "nacionalidade" character varying, "nome_pai" character varying, "nome_mae" character varying, "responsavel_nome" character varying, "responsavel_cpf" character varying, "responsavel_rg" character varying, "responsavel_orientacao" text, "portador_necessidade" boolean, "cep" character varying, "rua" character varying, "bairro" character varying, "numero" character varying, "complemento" character varying, "g_estado_id" bigint, "g_cidade_id" bigint, "a_unidade_treinamento_id" bigint, "created_by" character varying, "updated_by" character varying, "deleted_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_95291c500c"
+FOREIGN KEY ("g_estado_id")
+  REFERENCES "g_estados" ("id")
+, CONSTRAINT "fk_rails_71b29cebe3"
+FOREIGN KEY ("g_cidade_id")
+  REFERENCES "g_cidades" ("id")
+, CONSTRAINT "fk_rails_9161b4d778"
+FOREIGN KEY ("a_unidade_treinamento_id")
+  REFERENCES "a_unidade_treinamentos" ("id")
+)[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE INDEX "index_a_atletas_on_g_estado_id" ON "a_atletas" ("g_estado_id")[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE INDEX "index_a_atletas_on_g_cidade_id" ON "a_atletas" ("g_cidade_id")[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE INDEX "index_a_atletas_on_a_unidade_treinamento_id" ON "a_atletas" ("a_unidade_treinamento_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250726173552') RETURNING "version"[0m
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2879803177763566740)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2879803177763566740)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateASexos (20250726174052)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (10.0ms)[0m  [1m[35mDROP TABLE "a_sexos"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (1.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20250726174052'[0m
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(2879803177763566740)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2879803177763566740)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+Migrating to CreateASexos (20250726174052)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (11.8ms)[0m  [1m[35mCREATE TABLE "a_sexos" ("id" bigserial primary key, "descricao" character varying, "created_by" character varying, "updated_by" character varying, "deleted_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250726174052') RETURNING "version"[0m
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(2879803177763566740)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2879803177763566740)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+Migrating to CreateAAtletas (20250726174610)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "a_atletas" ("id" bigserial primary key, "nome" character varying, "cpf" character varying, "data_nascimento" date, "contato1" character varying, "contato2" character varying, "nacionalidade" character varying, "nome_pai" character varying, "nome_mae" character varying, "responsavel_nome" character varying, "responsavel_cpf" character varying, "responsavel_rg" character varying, "responsavel_orientacao" text, "portador_necessidade" boolean, "descricao_necessidade" text, "cep" character varying, "rua" character varying, "bairro" character varying, "numero" character varying, "complemento" character varying, "g_estado_id" bigint, "g_cidade_id" bigint, "a_unidade_treinamento_id" bigint, "a_sexo_id" bigint, "created_by" character varying, "updated_by" character varying, "deleted_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_95291c500c"
+FOREIGN KEY ("g_estado_id")
+  REFERENCES "g_estados" ("id")
+, CONSTRAINT "fk_rails_71b29cebe3"
+FOREIGN KEY ("g_cidade_id")
+  REFERENCES "g_cidades" ("id")
+, CONSTRAINT "fk_rails_9161b4d778"
+FOREIGN KEY ("a_unidade_treinamento_id")
+  REFERENCES "a_unidade_treinamentos" ("id")
+, CONSTRAINT "fk_rails_33147b49a8"
+FOREIGN KEY ("a_sexo_id")
+  REFERENCES "a_sexos" ("id")
+)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(2879803177763566740)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2879803177763566740)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+Migrating to CreateAAtletas (20250726174610)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "a_atletas" ("id" bigserial primary key, "nome" character varying, "cpf" character varying, "data_nascimento" date, "contato1" character varying, "contato2" character varying, "nacionalidade" character varying, "nome_pai" character varying, "nome_mae" character varying, "responsavel_nome" character varying, "responsavel_cpf" character varying, "responsavel_rg" character varying, "responsavel_orientacao" text, "portador_necessidade" boolean, "descricao_necessidade" text, "cep" character varying, "rua" character varying, "bairro" character varying, "numero" character varying, "complemento" character varying, "g_estado_id" bigint, "g_cidade_id" bigint, "a_unidade_treinamento_id" bigint, "a_sexo_id" bigint, "created_by" character varying, "updated_by" character varying, "deleted_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_95291c500c"
+FOREIGN KEY ("g_estado_id")
+  REFERENCES "g_estados" ("id")
+, CONSTRAINT "fk_rails_71b29cebe3"
+FOREIGN KEY ("g_cidade_id")
+  REFERENCES "g_cidades" ("id")
+, CONSTRAINT "fk_rails_9161b4d778"
+FOREIGN KEY ("a_unidade_treinamento_id")
+  REFERENCES "a_unidade_treinamentos" ("id")
+, CONSTRAINT "fk_rails_33147b49a8"
+FOREIGN KEY ("a_sexo_id")
+  REFERENCES "a_sexos" ("id")
+)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(2879803177763566740)[0m
+  [1m[35m (156.4ms)[0m  [1m[35mCREATE DATABASE "novos_recomecos_development" ENCODING = 'unicode'[0m
+  [1m[35m (61.0ms)[0m  [1m[35mCREATE DATABASE "novos_recomecos_test" ENCODING = 'unicode'[0m
+  [1m[35m (13.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (10.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1391673798280548615)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Create (1.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2025-07-26 17:52:37.702639', '2025-07-26 17:52:37.702642') RETURNING "key"[0m
+Migrating to CreateGTipoUsuarios (20250718053052)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (12.1ms)[0m  [1m[35mCREATE TABLE "g_tipo_usuarios" ("id" bigserial primary key, "descricao" character varying, "created_by" character varying, "updated_by" character varying, "deleted_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250718053052') RETURNING "version"[0m
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to DeviseCreateUsers (20250718062334)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (11.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp(6), "remember_created_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (2.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250718062334') RETURNING "version"[0m
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddNomeCpfToUsers (20250718062351)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "nome" character varying[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "cpf" character varying[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" ADD "g_tipo_usuario_id" bigint[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE INDEX "index_users_on_g_tipo_usuario_id" ON "users" ("g_tipo_usuario_id")[0m
+  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE "users" ADD CONSTRAINT "fk_rails_553e739efc"
+FOREIGN KEY ("g_tipo_usuario_id")
+  REFERENCES "g_tipo_usuarios" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250718062351') RETURNING "version"[0m
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateGEstados (20250724093810)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (12.1ms)[0m  [1m[35mCREATE TABLE "g_estados" ("id" bigserial primary key, "nome_fantasia" character varying, "created_by" character varying, "updated_by" character varying, "deleted_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250724093810') RETURNING "version"[0m
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateGCidades (20250724094624)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (12.3ms)[0m  [1m[35mCREATE TABLE "g_cidades" ("id" bigserial primary key, "nome_fantasia" character varying, "g_estado_id" bigint, "created_by" character varying, "updated_by" character varying, "deleted_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_f7f3e4f4c5"
+FOREIGN KEY ("g_estado_id")
+  REFERENCES "g_estados" ("id")
+)[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE INDEX "index_g_cidades_on_g_estado_id" ON "g_cidades" ("g_estado_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250724094624') RETURNING "version"[0m
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateAZonaTreinamentos (20250724095919)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (9.0ms)[0m  [1m[35mCREATE TABLE "a_zona_treinamentos" ("id" bigserial primary key, "descricao" character varying, "created_by" character varying, "updated_by" character varying, "deleted_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250724095919') RETURNING "version"[0m
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateAUnidadeTreinamentos (20250724100955)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (12.0ms)[0m  [1m[35mCREATE TABLE "a_unidade_treinamentos" ("id" bigserial primary key, "descricao" character varying, "a_zona_treinamento_id" bigint, "created_by" character varying, "updated_by" character varying, "deleted_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_434eb7b3a8"
+FOREIGN KEY ("a_zona_treinamento_id")
+  REFERENCES "a_zona_treinamentos" ("id")
+)[0m
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE INDEX "index_a_unidade_treinamentos_on_a_zona_treinamento_id" ON "a_unidade_treinamentos" ("a_zona_treinamento_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250724100955') RETURNING "version"[0m
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateASexos (20250726174052)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (11.7ms)[0m  [1m[35mCREATE TABLE "a_sexos" ("id" bigserial primary key, "descricao" character varying, "created_by" character varying, "updated_by" character varying, "deleted_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250726174052') RETURNING "version"[0m
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateAAtletas (20250726174610)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (13.7ms)[0m  [1m[35mCREATE TABLE "a_atletas" ("id" bigserial primary key, "nome" character varying, "cpf" character varying, "data_nascimento" date, "contato1" character varying, "contato2" character varying, "nacionalidade" character varying, "nome_pai" character varying, "nome_mae" character varying, "responsavel_nome" character varying, "responsavel_cpf" character varying, "responsavel_rg" character varying, "responsavel_orientacao" text, "portador_necessidade" boolean, "descricao_necessidade" text, "cep" character varying, "rua" character varying, "bairro" character varying, "numero" character varying, "complemento" character varying, "g_estado_id" bigint, "g_cidade_id" bigint, "a_unidade_treinamento_id" bigint, "a_sexo_id" bigint, "created_by" character varying, "updated_by" character varying, "deleted_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_95291c500c"
+FOREIGN KEY ("g_estado_id")
+  REFERENCES "g_estados" ("id")
+, CONSTRAINT "fk_rails_71b29cebe3"
+FOREIGN KEY ("g_cidade_id")
+  REFERENCES "g_cidades" ("id")
+, CONSTRAINT "fk_rails_9161b4d778"
+FOREIGN KEY ("a_unidade_treinamento_id")
+  REFERENCES "a_unidade_treinamentos" ("id")
+, CONSTRAINT "fk_rails_33147b49a8"
+FOREIGN KEY ("a_sexo_id")
+  REFERENCES "a_sexos" ("id")
+)[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE INDEX "index_a_atletas_on_g_estado_id" ON "a_atletas" ("g_estado_id")[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE INDEX "index_a_atletas_on_g_cidade_id" ON "a_atletas" ("g_cidade_id")[0m
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE INDEX "index_a_atletas_on_a_unidade_treinamento_id" ON "a_atletas" ("a_unidade_treinamento_id")[0m
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE INDEX "index_a_atletas_on_a_sexo_id" ON "a_atletas" ("a_sexo_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250726174610') RETURNING "version"[0m
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1391673798280548615)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2025-07-26 13:53:00 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GAdminController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 401 Unauthorized in 81ms (ActiveRecord: 50.9ms (1 query, 0 cached) | GC: 49.4ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-07-26 13:53:00 -0400
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/devise_application
+  Rendered devise/sessions/new.html.erb within layouts/devise_application (Duration: 12.1ms | GC: 0.0ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 94.3ms | GC: 23.7ms)
+Completed 200 OK in 107ms (Views: 98.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 24.6ms)
+
+
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGTipoUsuario Create (1.1ms)[0m  [1m[32mINSERT INTO "g_tipo_usuarios" ("descricao", "created_by", "updated_by", "deleted_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["descricao", "ADMIN"], ["created_by", nil], ["updated_by", nil], ["deleted_at", nil], ["created_at", "2025-07-26 17:53:16.375389"], ["updated_at", "2025-07-26 17:53:16.375389"]]
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/users/sign_up" for 127.0.0.1 at 2025-07-26 13:53:19 -0400
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/devise_application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  [1m[36mGTipoUsuario Load (0.5ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios"[0m
+  ↳ app/views/devise/registrations/new.html.erb:40:in `collect'
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/devise_application (Duration: 14.3ms | GC: 0.0ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 15.5ms | GC: 0.0ms)
+Completed 200 OK in 17ms (Views: 14.2ms | ActiveRecord: 1.9ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2025-07-26 13:53:32 -0400
+Processing by Users::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"nome"=>"Dhiogo", "email"=>"[FILTERED]", "cpf"=>"02588772277", "g_tipo_usuario_id"=>"1", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Criar conta"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "[FILTERED]"], ["LIMIT", 1]]
+  [1m[36mGTipoUsuario Load (0.2ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."cpf" = $1 LIMIT $2[0m  [["cpf", "02588772277"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/devise_application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  [1m[36mGTipoUsuario Load (0.4ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios"[0m
+  ↳ app/views/devise/registrations/new.html.erb:40:in `collect'
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/devise_application (Duration: 5.1ms | GC: 0.0ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 6.2ms | GC: 0.0ms)
+Completed 422 Unprocessable Content in 190ms (Views: 6.2ms | ActiveRecord: 3.5ms (4 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2025-07-26 13:53:38 -0400
+Processing by Users::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"nome"=>"Dhiogo", "email"=>"[FILTERED]", "cpf"=>"02588772277", "g_tipo_usuario_id"=>"1", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Criar conta"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "[FILTERED]"], ["LIMIT", 1]]
+  [1m[36mGTipoUsuario Load (0.1ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."cpf" = $1 LIMIT $2[0m  [["cpf", "02588772277"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at", "nome", "cpf", "g_tipo_usuario_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["email", "[FILTERED]"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["created_at", "2025-07-26 17:53:38.855753"], ["updated_at", "2025-07-26 17:53:38.855753"], ["nome", "Dhiogo"], ["cpf", "02588772277"], ["g_tipo_usuario_id", 1]]
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 192ms (ActiveRecord: 5.3ms (4 queries, 0 cached) | GC: 13.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-07-26 13:53:38 -0400
+Processing by GAdminController#index as TURBO_STREAM
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGTipoUsuario Load (0.1ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering g_admin/index.html.erb within layouts/application
+  Rendered g_admin/index.html.erb within layouts/application (Duration: 0.9ms | GC: 0.5ms)
+  Rendered shared/_navbar.html.erb (Duration: 1.1ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | GC: 1.1ms)
+Completed 200 OK in 11ms (Views: 8.6ms | ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-07-26 13:53:38 -0400
+Processing by GAdminController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGTipoUsuario Load (0.3ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering g_admin/index.html.erb within layouts/application
+  Rendered g_admin/index.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | GC: 0.0ms)
+Completed 200 OK in 10ms (Views: 6.5ms | ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/a_unidade_treinamentos" for 127.0.0.1 at 2025-07-26 13:53:41 -0400
+Processing by AUnidadeTreinamentosController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAUnidadeTreinamento Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "a_unidade_treinamentos"[0m
+  ↳ app/controllers/a_unidade_treinamentos_controller.rb:9:in `index'
+  [1m[36mGTipoUsuario Load (0.2ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering a_unidade_treinamentos/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  [1m[36mAUnidadeTreinamento Load (0.1ms)[0m  [1m[34mSELECT "a_unidade_treinamentos".* FROM "a_unidade_treinamentos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/a_unidade_treinamentos/index.html.erb:23
+  Rendered a_unidade_treinamentos/index.html.erb within layouts/application (Duration: 4.8ms | GC: 0.2ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.9ms | GC: 0.7ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | GC: 3.3ms)
+Completed 200 OK in 21ms (Views: 12.8ms | ActiveRecord: 2.1ms (4 queries, 0 cached) | GC: 3.5ms)
+
+
+Started GET "/g_estados" for 127.0.0.1 at 2025-07-26 13:53:41 -0400
+Processing by GEstadosController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGEstado Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "g_estados"[0m
+  ↳ app/controllers/g_estados_controller.rb:9:in `index'
+  [1m[36mGTipoUsuario Load (0.1ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering g_estados/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  [1m[36mGEstado Load (0.1ms)[0m  [1m[34mSELECT "g_estados".* FROM "g_estados" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/g_estados/index.html.erb:25
+  Rendered g_estados/index.html.erb within layouts/application (Duration: 5.9ms | GC: 3.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 1.2ms | GC: 0.9ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | GC: 10.0ms)
+Completed 200 OK in 36ms (Views: 20.7ms | ActiveRecord: 1.7ms (4 queries, 0 cached) | GC: 20.3ms)
+
+
+Started GET "/g_estados/new" for 127.0.0.1 at 2025-07-26 13:53:43 -0400
+Processing by GEstadosController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGTipoUsuario Load (0.1ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering g_estados/new.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered g_estados/_form.html.erb (Duration: 2.6ms | GC: 0.0ms)
+  Rendered g_estados/new.html.erb within layouts/application (Duration: 3.5ms | GC: 0.4ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | GC: 0.8ms)
+Completed 200 OK in 21ms (Views: 8.1ms | ActiveRecord: 1.7ms (2 queries, 0 cached) | GC: 7.2ms)
+
+
+Started POST "/g_estados" for 127.0.0.1 at 2025-07-26 13:53:56 -0400
+Processing by GEstadosController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "g_estado"=>{"nome_fantasia"=>"RO"}, "button"=>""}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/g_estados_controller.rb:22:in `create'
+  [1m[36mGEstado Exists? (1.4ms)[0m  [1m[34mSELECT 1 AS one FROM "g_estados" WHERE "g_estados"."nome_fantasia" = $1 LIMIT $2[0m  [["nome_fantasia", "RO"], ["LIMIT", 1]]
+  ↳ app/controllers/g_estados_controller.rb:22:in `create'
+  [1m[36mGEstado Create (0.3ms)[0m  [1m[32mINSERT INTO "g_estados" ("nome_fantasia", "created_by", "updated_by", "deleted_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nome_fantasia", "RO"], ["created_by", nil], ["updated_by", nil], ["deleted_at", nil], ["created_at", "2025-07-26 17:53:57.023748"], ["updated_at", "2025-07-26 17:53:57.023748"]]
+  ↳ app/controllers/g_estados_controller.rb:22:in `create'
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/g_estados_controller.rb:22:in `create'
+Redirected to http://127.0.0.1:3000/g_estados
+Completed 302 Found in 22ms (ActiveRecord: 8.1ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/g_estados" for 127.0.0.1 at 2025-07-26 13:53:57 -0400
+Processing by GEstadosController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGEstado Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "g_estados"[0m
+  ↳ app/controllers/g_estados_controller.rb:9:in `index'
+  [1m[36mGTipoUsuario Load (0.2ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering g_estados/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 1.9ms | GC: 0.8ms)
+  [1m[36mGEstado Load (0.5ms)[0m  [1m[34mSELECT "g_estados".* FROM "g_estados" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/g_estados/index.html.erb:25
+  Rendered g_estados/index.html.erb within layouts/application (Duration: 9.3ms | GC: 0.8ms)
+  Rendered shared/_navbar.html.erb (Duration: 1.0ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 1.2ms | GC: 0.4ms)
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | GC: 2.0ms)
+Completed 200 OK in 49ms (Views: 40.4ms | ActiveRecord: 3.1ms (4 queries, 0 cached) | GC: 18.1ms)
+
+
+Started GET "/g_estados/new" for 127.0.0.1 at 2025-07-26 13:53:57 -0400
+Processing by GEstadosController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGTipoUsuario Load (0.1ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering g_estados/new.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered g_estados/_form.html.erb (Duration: 2.3ms | GC: 0.1ms)
+  Rendered g_estados/new.html.erb within layouts/application (Duration: 2.8ms | GC: 0.1ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | GC: 0.1ms)
+Completed 200 OK in 11ms (Views: 8.4ms | ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/g_cidades" for 127.0.0.1 at 2025-07-26 13:53:59 -0400
+Processing by GCidadesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGCidade Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "g_cidades"[0m
+  ↳ app/controllers/g_cidades_controller.rb:9:in `index'
+  [1m[36mGTipoUsuario Load (0.1ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering g_cidades/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  [1m[36mGCidade Load (0.1ms)[0m  [1m[34mSELECT "g_cidades".* FROM "g_cidades" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/g_cidades/index.html.erb:23
+  Rendered g_cidades/index.html.erb within layouts/application (Duration: 2.5ms | GC: 0.1ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | GC: 0.5ms)
+Completed 200 OK in 17ms (Views: 8.3ms | ActiveRecord: 1.7ms (4 queries, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/g_cidades/new" for 127.0.0.1 at 2025-07-26 13:54:00 -0400
+Processing by GCidadesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGTipoUsuario Load (0.1ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering g_cidades/new.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  [1m[36mGEstado Load (0.7ms)[0m  [1m[34mSELECT "g_estados".* FROM "g_estados" ORDER BY "g_estados"."nome_fantasia" ASC[0m
+  ↳ app/views/g_cidades/_form.html.erb:20
+  Rendered g_cidades/_form.html.erb (Duration: 5.2ms | GC: 0.0ms)
+  Rendered g_cidades/new.html.erb within layouts/application (Duration: 5.6ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | GC: 0.0ms)
+Completed 200 OK in 16ms (Views: 9.1ms | ActiveRecord: 2.2ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/g_cidades" for 127.0.0.1 at 2025-07-26 13:54:04 -0400
+Processing by GCidadesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "g_cidade"=>{"nome_fantasia"=>"Porto Velho", "g_estado_id"=>"1"}, "button"=>""}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/g_cidades_controller.rb:22:in `create'
+  [1m[36mGEstado Load (0.1ms)[0m  [1m[34mSELECT "g_estados".* FROM "g_estados" WHERE "g_estados"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/g_cidades_controller.rb:22:in `create'
+  [1m[36mGCidade Create (0.5ms)[0m  [1m[32mINSERT INTO "g_cidades" ("nome_fantasia", "g_estado_id", "created_by", "updated_by", "deleted_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["nome_fantasia", "Porto Velho"], ["g_estado_id", 1], ["created_by", nil], ["updated_by", nil], ["deleted_at", nil], ["created_at", "2025-07-26 17:54:04.806102"], ["updated_at", "2025-07-26 17:54:04.806102"]]
+  ↳ app/controllers/g_cidades_controller.rb:22:in `create'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/g_cidades_controller.rb:22:in `create'
+Redirected to http://127.0.0.1:3000/g_cidades
+Completed 302 Found in 9ms (ActiveRecord: 2.5ms (3 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/g_cidades" for 127.0.0.1 at 2025-07-26 13:54:04 -0400
+Processing by GCidadesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGCidade Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "g_cidades"[0m
+  ↳ app/controllers/g_cidades_controller.rb:9:in `index'
+  [1m[36mGTipoUsuario Load (0.1ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering g_cidades/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  [1m[36mGCidade Load (0.1ms)[0m  [1m[34mSELECT "g_cidades".* FROM "g_cidades" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/g_cidades/index.html.erb:23
+  [1m[36mGEstado Load (0.1ms)[0m  [1m[34mSELECT "g_estados".* FROM "g_estados" WHERE "g_estados"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/g_cidades/index.html.erb:41
+  Rendered g_cidades/index.html.erb within layouts/application (Duration: 3.5ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | GC: 0.3ms)
+Completed 200 OK in 12ms (Views: 7.9ms | ActiveRecord: 0.8ms (5 queries, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/a_unidade_treinamentos" for 127.0.0.1 at 2025-07-26 13:54:05 -0400
+Processing by AUnidadeTreinamentosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAUnidadeTreinamento Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "a_unidade_treinamentos"[0m
+  ↳ app/controllers/a_unidade_treinamentos_controller.rb:9:in `index'
+  [1m[36mGTipoUsuario Load (0.1ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering a_unidade_treinamentos/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  [1m[36mAUnidadeTreinamento Load (0.1ms)[0m  [1m[34mSELECT "a_unidade_treinamentos".* FROM "a_unidade_treinamentos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/a_unidade_treinamentos/index.html.erb:23
+  Rendered a_unidade_treinamentos/index.html.erb within layouts/application (Duration: 2.5ms | GC: 0.2ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | GC: 0.5ms)
+Completed 200 OK in 15ms (Views: 6.8ms | ActiveRecord: 2.1ms (4 queries, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/a_zona_treinamentos" for 127.0.0.1 at 2025-07-26 13:54:06 -0400
+Processing by AZonaTreinamentosController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAZonaTreinamento Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "a_zona_treinamentos"[0m
+  ↳ app/controllers/a_zona_treinamentos_controller.rb:9:in `index'
+  [1m[36mGTipoUsuario Load (0.1ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering a_zona_treinamentos/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  [1m[36mAZonaTreinamento Load (0.1ms)[0m  [1m[34mSELECT "a_zona_treinamentos".* FROM "a_zona_treinamentos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/a_zona_treinamentos/index.html.erb:25
+  Rendered a_zona_treinamentos/index.html.erb within layouts/application (Duration: 2.3ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | GC: 0.0ms)
+Completed 200 OK in 16ms (Views: 7.6ms | ActiveRecord: 1.6ms (4 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/a_zona_treinamentos/new" for 127.0.0.1 at 2025-07-26 13:54:07 -0400
+Processing by AZonaTreinamentosController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGTipoUsuario Load (0.1ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering a_zona_treinamentos/new.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered a_zona_treinamentos/_form.html.erb (Duration: 3.3ms | GC: 0.7ms)
+  Rendered a_zona_treinamentos/new.html.erb within layouts/application (Duration: 3.9ms | GC: 0.7ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | GC: 1.3ms)
+Completed 200 OK in 22ms (Views: 9.3ms | ActiveRecord: 1.5ms (2 queries, 0 cached) | GC: 7.8ms)
+
+
+Started POST "/a_zona_treinamentos" for 127.0.0.1 at 2025-07-26 13:54:09 -0400
+Processing by AZonaTreinamentosController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "a_zona_treinamento"=>{"descricao"=>"Zona Sul"}, "button"=>""}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/a_zona_treinamentos_controller.rb:22:in `create'
+  [1m[36mAZonaTreinamento Create (1.6ms)[0m  [1m[32mINSERT INTO "a_zona_treinamentos" ("descricao", "created_by", "updated_by", "deleted_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["descricao", "Zona Sul"], ["created_by", nil], ["updated_by", nil], ["deleted_at", nil], ["created_at", "2025-07-26 17:54:09.428726"], ["updated_at", "2025-07-26 17:54:09.428726"]]
+  ↳ app/controllers/a_zona_treinamentos_controller.rb:22:in `create'
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/a_zona_treinamentos_controller.rb:22:in `create'
+Redirected to http://127.0.0.1:3000/a_zona_treinamentos
+Completed 302 Found in 9ms (ActiveRecord: 3.9ms (2 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/a_zona_treinamentos" for 127.0.0.1 at 2025-07-26 13:54:09 -0400
+Processing by AZonaTreinamentosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAZonaTreinamento Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "a_zona_treinamentos"[0m
+  ↳ app/controllers/a_zona_treinamentos_controller.rb:9:in `index'
+  [1m[36mGTipoUsuario Load (0.1ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering a_zona_treinamentos/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  [1m[36mAZonaTreinamento Load (0.3ms)[0m  [1m[34mSELECT "a_zona_treinamentos".* FROM "a_zona_treinamentos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/a_zona_treinamentos/index.html.erb:25
+  Rendered a_zona_treinamentos/index.html.erb within layouts/application (Duration: 4.0ms | GC: 0.3ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | GC: 0.3ms)
+Completed 200 OK in 11ms (Views: 7.8ms | ActiveRecord: 0.8ms (4 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/a_zona_treinamentos/new" for 127.0.0.1 at 2025-07-26 13:54:11 -0400
+Processing by AZonaTreinamentosController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGTipoUsuario Load (0.1ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering a_zona_treinamentos/new.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered a_zona_treinamentos/_form.html.erb (Duration: 1.4ms | GC: 0.0ms)
+  Rendered a_zona_treinamentos/new.html.erb within layouts/application (Duration: 1.6ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | GC: 0.0ms)
+Completed 200 OK in 9ms (Views: 6.3ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/a_zona_treinamentos" for 127.0.0.1 at 2025-07-26 13:54:13 -0400
+Processing by AZonaTreinamentosController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "a_zona_treinamento"=>{"descricao"=>"Zona Leste"}, "button"=>""}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/a_zona_treinamentos_controller.rb:22:in `create'
+  [1m[36mAZonaTreinamento Create (1.2ms)[0m  [1m[32mINSERT INTO "a_zona_treinamentos" ("descricao", "created_by", "updated_by", "deleted_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["descricao", "Zona Leste"], ["created_by", nil], ["updated_by", nil], ["deleted_at", nil], ["created_at", "2025-07-26 17:54:13.013909"], ["updated_at", "2025-07-26 17:54:13.013909"]]
+  ↳ app/controllers/a_zona_treinamentos_controller.rb:22:in `create'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/a_zona_treinamentos_controller.rb:22:in `create'
+Redirected to http://127.0.0.1:3000/a_zona_treinamentos
+Completed 302 Found in 8ms (ActiveRecord: 3.4ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/a_zona_treinamentos" for 127.0.0.1 at 2025-07-26 13:54:13 -0400
+Processing by AZonaTreinamentosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAZonaTreinamento Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "a_zona_treinamentos"[0m
+  ↳ app/controllers/a_zona_treinamentos_controller.rb:9:in `index'
+  [1m[36mGTipoUsuario Load (0.1ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering a_zona_treinamentos/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  [1m[36mAZonaTreinamento Load (0.1ms)[0m  [1m[34mSELECT "a_zona_treinamentos".* FROM "a_zona_treinamentos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/a_zona_treinamentos/index.html.erb:25
+  Rendered a_zona_treinamentos/index.html.erb within layouts/application (Duration: 2.5ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | GC: 0.5ms)
+Completed 200 OK in 17ms (Views: 6.6ms | ActiveRecord: 0.8ms (4 queries, 0 cached) | GC: 6.1ms)
+
+
+Started GET "/a_unidade_treinamentos" for 127.0.0.1 at 2025-07-26 13:54:13 -0400
+Processing by AUnidadeTreinamentosController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAUnidadeTreinamento Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "a_unidade_treinamentos"[0m
+  ↳ app/controllers/a_unidade_treinamentos_controller.rb:9:in `index'
+  [1m[36mGTipoUsuario Load (0.1ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering a_unidade_treinamentos/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  [1m[36mAUnidadeTreinamento Load (0.3ms)[0m  [1m[34mSELECT "a_unidade_treinamentos".* FROM "a_unidade_treinamentos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/a_unidade_treinamentos/index.html.erb:23
+  Rendered a_unidade_treinamentos/index.html.erb within layouts/application (Duration: 3.0ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | GC: 0.3ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | GC: 0.3ms)
+Completed 200 OK in 12ms (Views: 7.5ms | ActiveRecord: 0.8ms (4 queries, 0 cached) | GC: 0.8ms)
+
+
+Started GET "/a_unidade_treinamentos/new" for 127.0.0.1 at 2025-07-26 13:54:14 -0400
+Processing by AUnidadeTreinamentosController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGTipoUsuario Load (0.2ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering a_unidade_treinamentos/new.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  [1m[36mAZonaTreinamento Load (0.4ms)[0m  [1m[34mSELECT "a_zona_treinamentos".* FROM "a_zona_treinamentos" ORDER BY "a_zona_treinamentos"."descricao" ASC[0m
+  ↳ app/views/a_unidade_treinamentos/_form.html.erb:20
+  Rendered a_unidade_treinamentos/_form.html.erb (Duration: 5.7ms | GC: 0.0ms)
+  Rendered a_unidade_treinamentos/new.html.erb within layouts/application (Duration: 6.6ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | GC: 0.5ms)
+Completed 200 OK in 18ms (Views: 11.2ms | ActiveRecord: 1.9ms (3 queries, 0 cached) | GC: 0.6ms)
+
+
+Started POST "/a_unidade_treinamentos" for 127.0.0.1 at 2025-07-26 13:54:20 -0400
+Processing by AUnidadeTreinamentosController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "a_unidade_treinamento"=>{"descricao"=>"CT Skate Park", "a_zona_treinamento_id"=>"2"}, "button"=>""}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/a_unidade_treinamentos_controller.rb:22:in `create'
+  [1m[36mAZonaTreinamento Load (0.3ms)[0m  [1m[34mSELECT "a_zona_treinamentos".* FROM "a_zona_treinamentos" WHERE "a_zona_treinamentos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/a_unidade_treinamentos_controller.rb:22:in `create'
+  [1m[36mAUnidadeTreinamento Create (0.4ms)[0m  [1m[32mINSERT INTO "a_unidade_treinamentos" ("descricao", "a_zona_treinamento_id", "created_by", "updated_by", "deleted_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["descricao", "CT Skate Park"], ["a_zona_treinamento_id", 2], ["created_by", nil], ["updated_by", nil], ["deleted_at", nil], ["created_at", "2025-07-26 17:54:20.485636"], ["updated_at", "2025-07-26 17:54:20.485636"]]
+  ↳ app/controllers/a_unidade_treinamentos_controller.rb:22:in `create'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/a_unidade_treinamentos_controller.rb:22:in `create'
+Redirected to http://127.0.0.1:3000/a_unidade_treinamentos
+Completed 302 Found in 11ms (ActiveRecord: 2.8ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/a_unidade_treinamentos" for 127.0.0.1 at 2025-07-26 13:54:20 -0400
+Processing by AUnidadeTreinamentosController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAUnidadeTreinamento Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "a_unidade_treinamentos"[0m
+  ↳ app/controllers/a_unidade_treinamentos_controller.rb:9:in `index'
+  [1m[36mGTipoUsuario Load (0.2ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering a_unidade_treinamentos/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  [1m[36mAUnidadeTreinamento Load (0.2ms)[0m  [1m[34mSELECT "a_unidade_treinamentos".* FROM "a_unidade_treinamentos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/a_unidade_treinamentos/index.html.erb:23
+  [1m[36mAZonaTreinamento Load (0.1ms)[0m  [1m[34mSELECT "a_zona_treinamentos".* FROM "a_zona_treinamentos" WHERE "a_zona_treinamentos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/a_unidade_treinamentos/index.html.erb:41
+  Rendered a_unidade_treinamentos/index.html.erb within layouts/application (Duration: 6.7ms | GC: 2.9ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | GC: 3.4ms)
+Completed 200 OK in 16ms (Views: 11.6ms | ActiveRecord: 1.1ms (5 queries, 0 cached) | GC: 3.4ms)
+
+
+Started GET "/a_zona_treinamentos" for 127.0.0.1 at 2025-07-26 13:54:22 -0400
+Processing by AZonaTreinamentosController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAZonaTreinamento Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "a_zona_treinamentos"[0m
+  ↳ app/controllers/a_zona_treinamentos_controller.rb:9:in `index'
+  [1m[36mGTipoUsuario Load (0.5ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering a_zona_treinamentos/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  [1m[36mAZonaTreinamento Load (0.2ms)[0m  [1m[34mSELECT "a_zona_treinamentos".* FROM "a_zona_treinamentos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/a_zona_treinamentos/index.html.erb:25
+  Rendered a_zona_treinamentos/index.html.erb within layouts/application (Duration: 2.5ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | GC: 0.0ms)
+Completed 200 OK in 12ms (Views: 6.1ms | ActiveRecord: 1.4ms (4 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/a_unidade_treinamentos" for 127.0.0.1 at 2025-07-26 13:54:22 -0400
+Processing by AUnidadeTreinamentosController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAUnidadeTreinamento Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "a_unidade_treinamentos"[0m
+  ↳ app/controllers/a_unidade_treinamentos_controller.rb:9:in `index'
+  [1m[36mGTipoUsuario Load (0.1ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering a_unidade_treinamentos/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  [1m[36mAUnidadeTreinamento Load (0.1ms)[0m  [1m[34mSELECT "a_unidade_treinamentos".* FROM "a_unidade_treinamentos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/a_unidade_treinamentos/index.html.erb:23
+  [1m[36mAZonaTreinamento Load (0.2ms)[0m  [1m[34mSELECT "a_zona_treinamentos".* FROM "a_zona_treinamentos" WHERE "a_zona_treinamentos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/a_unidade_treinamentos/index.html.erb:41
+  Rendered a_unidade_treinamentos/index.html.erb within layouts/application (Duration: 3.8ms | GC: 0.1ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | GC: 0.1ms)
+Completed 200 OK in 11ms (Views: 7.7ms | ActiveRecord: 0.8ms (5 queries, 0 cached) | GC: 0.3ms)
+
+

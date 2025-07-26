@@ -1,0 +1,2 @@
+json.extract! a_atleta, :id, :nome, :cpf, :data_nascimento, :contato1, :contato2, :nacionalidade, :nome_pai, :nome_mae, :responsavel_nome, :responsavel_cpf, :responsavel_rg, :responsavel_orientacao, :portador_necessidade, :descricao_necessidade, :cep, :rua, :bairro, :numero, :complemento, :g_estado_id, :g_cidade_id, :a_unidade_treinamento_id, :a_sexo_id, :created_by, :updated_by, :deleted_at, :created_at, :updated_at
+json.url a_atleta_url(a_atleta, format: :json)

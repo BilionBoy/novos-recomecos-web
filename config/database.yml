@@ -5,21 +5,21 @@ default: &default
 
 development:
   <<: *default
-  database: associacaorecomecos_development
+  database: novos_recomecos_development
   username: <%= ENV['DB_USERNAME'] || "novosrecomecos" %>
   password: <%= ENV['DB_PASSWORD'] || "recomecos112358132134589" %>
   host: <%= ENV['DB_HOST'] || "localhost" %>
 
 test:
   <<: *default
-  database: associacaorecomecos_test
+  database: novos_recomecos_test
   username: <%= ENV['DB_USERNAME'] || "novosrecomecos" %>
   password: <%= ENV['DB_PASSWORD'] || "recomecos112358132134589" %>
   host: <%= ENV['DB_HOST'] || "localhost" %>
 
 production:
   <<: *default
-  database: <%= ENV['DB_NAME'] || "associacaorecomecos_production" %>
+  database: <%= ENV['DB_NAME'] || "novos_recomecos_production" %>
   username: <%= ENV['DB_USERNAME'] || "novosrecomecos" %>
   password: <%= ENV['DB_PASSWORD'] || "recomecos112358132134589" %>
   host: <%= ENV['DB_HOST'] || "db" %>

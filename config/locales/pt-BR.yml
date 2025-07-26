@@ -29,6 +29,9 @@ pt-BR:
       a_unidade_treinamento:
         one: "Unidade de Treinamento"
         other: "Unidades de Treinamento"
+      a_atleta:
+        one: "Atleta"
+        other: "Atletas"
     attributes:
       g_tipo_usuario:
         descricao: "Descrição"
@@ -42,6 +45,11 @@ pt-BR:
       a_unidade_treinamento:
         descricao: "Descrição"
         a_zona_treinamento_id: "Zona de Treinamento"
+      a_atleta:
+        nome: "Nome"
+        cpf: "CPF"
+        data_nascimento: "Data de Nascimento"
+        sexo: "Sexo"
     errors:
       messages:
         record_invalid: "A validação falhou: %{errors}"
