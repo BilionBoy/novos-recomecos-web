@@ -13,10 +13,10 @@
       <%= f.error_notification %>
       <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
       <div class="row">
-        <div class="col-12">
+        <div class="col-5">
           <%= f.input :nome_fantasia, input_html: { class: "capitalize"}, placeholder: "Nome fantasia"  %>
         </div>
-        <div class="col-12">
+        <div class="col-7">
           <%= f.association :g_estado, collection: GEstado.all.order(:nome_fantasia), label_method: :nome_fantasia, value_method: :id, input_html: { class: "capitalize" }, prompt: "Selecione um estado" %>
         </div>
       </div>
