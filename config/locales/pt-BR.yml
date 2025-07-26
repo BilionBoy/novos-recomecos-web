@@ -29,6 +29,9 @@ pt-BR:
       a_unidade_treinamento:
         one: "Unidade de Treinamento"
         other: "Unidades de Treinamento"
+      a_sexo:
+        one: "Sexo"
+        other: "Sexos"
       a_atleta:
         one: "Atleta"
         other: "Atletas"
@@ -45,11 +48,35 @@ pt-BR:
       a_unidade_treinamento:
         descricao: "Descrição"
         a_zona_treinamento_id: "Zona de Treinamento"
+      a_sexo:
+        descricao: "Descrição"
       a_atleta:
         nome: "Nome"
         cpf: "CPF"
         data_nascimento: "Data de Nascimento"
-        sexo: "Sexo"
+        contato1: "Contato 1"
+        contato2: "Contato 2"
+        nacionalidade: "Nacionalidade"
+        nome_pai: "Nome do Pai"
+        nome_mae: "Nome da Mãe"
+        responsavel_nome: "Nome do Responsável"
+        responsavel_cpf: "CPF do Responsável"
+        responsavel_rg: "RG do Responsável"
+        responsavel_orientacao: "Orientações do Responsável"
+        portador_necessidade: "Possui Necessidades Especiais?"
+        descricao_necessidade: "Descrição da Necessidade"
+        cep: "CEP"
+        rua: "Rua"
+        bairro: "Bairro"
+        numero: "Número"
+        complemento: "Complemento"
+        g_estado_id: "Estado"
+        g_cidade_id: "Cidade"
+        a_unidade_treinamento_id: "Unidade de Treinamento"
+        a_sexo_id: "Sexo"
+        created_by: "Criado por"
+        updated_by: "Atualizado por"
+        deleted_at: "Data de Exclusão"
     errors:
       messages:
         record_invalid: "A validação falhou: %{errors}"

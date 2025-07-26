@@ -19,23 +19,6 @@
             <th><%= sort_link(@q, :cpf, t("activerecord.attributes.a_atleta.cpf")) %></th>
             <th><%= sort_link(@q, :data_nascimento, t("activerecord.attributes.a_atleta.data_nascimento")) %></th>
             <th><%= sort_link(@q, :contato1, t("activerecord.attributes.a_atleta.contato1")) %></th>
-            <th><%= sort_link(@q, :contato2, t("activerecord.attributes.a_atleta.contato2")) %></th>
-            <th><%= sort_link(@q, :nacionalidade, t("activerecord.attributes.a_atleta.nacionalidade")) %></th>
-            <th><%= sort_link(@q, :nome_pai, t("activerecord.attributes.a_atleta.nome_pai")) %></th>
-            <th><%= sort_link(@q, :nome_mae, t("activerecord.attributes.a_atleta.nome_mae")) %></th>
-            <th><%= sort_link(@q, :responsavel_nome, t("activerecord.attributes.a_atleta.responsavel_nome")) %></th>
-            <th><%= sort_link(@q, :responsavel_cpf, t("activerecord.attributes.a_atleta.responsavel_cpf")) %></th>
-            <th><%= sort_link(@q, :responsavel_rg, t("activerecord.attributes.a_atleta.responsavel_rg")) %></th>
-            <th><%= sort_link(@q, :responsavel_orientacao, t("activerecord.attributes.a_atleta.responsavel_orientacao")) %></th>
-            <th><%= sort_link(@q, :portador_necessidade, t("activerecord.attributes.a_atleta.portador_necessidade")) %></th>
-            <th><%= sort_link(@q, :descricao_necessidade, t("activerecord.attributes.a_atleta.descricao_necessidade")) %></th>
-            <th><%= sort_link(@q, :cep, t("activerecord.attributes.a_atleta.cep")) %></th>
-            <th><%= sort_link(@q, :rua, t("activerecord.attributes.a_atleta.rua")) %></th>
-            <th><%= sort_link(@q, :bairro, t("activerecord.attributes.a_atleta.bairro")) %></th>
-            <th><%= sort_link(@q, :numero, t("activerecord.attributes.a_atleta.numero")) %></th>
-            <th><%= sort_link(@q, :complemento, t("activerecord.attributes.a_atleta.complemento")) %></th>
-            <th><%= sort_link(@q, :g_estado, t("activerecord.attributes.a_atleta.g_estado")) %></th>
-            <th><%= sort_link(@q, :g_cidade, t("activerecord.attributes.a_atleta.g_cidade")) %></th>
             <th><%= sort_link(@q, :a_unidade_treinamento, t("activerecord.attributes.a_atleta.a_unidade_treinamento")) %></th>
             <th><%= sort_link(@q, :a_sexo, t("activerecord.attributes.a_atleta.a_sexo")) %></th>
           </tr>
@@ -62,25 +45,8 @@
                     <td><%= a_atleta.cpf %></td>
                     <td><%= a_atleta.data_nascimento %></td>
                     <td><%= a_atleta.contato1 %></td>
-                    <td><%= a_atleta.contato2 %></td>
-                    <td><%= a_atleta.nacionalidade %></td>
-                    <td><%= a_atleta.nome_pai %></td>
-                    <td><%= a_atleta.nome_mae %></td>
-                    <td><%= a_atleta.responsavel_nome %></td>
-                    <td><%= a_atleta.responsavel_cpf %></td>
-                    <td><%= a_atleta.responsavel_rg %></td>
-                    <td><%= a_atleta.responsavel_orientacao %></td>
-                    <td><%= a_atleta.portador_necessidade %></td>
-                    <td><%= a_atleta.descricao_necessidade %></td>
-                    <td><%= a_atleta.cep %></td>
-                    <td><%= a_atleta.rua %></td>
-                    <td><%= a_atleta.bairro %></td>
-                    <td><%= a_atleta.numero %></td>
-                    <td><%= a_atleta.complemento %></td>
-                    <td><%= a_atleta.g_estado %></td>
-                    <td><%= a_atleta.g_cidade %></td>
                     <td><%= a_atleta.a_unidade_treinamento %></td>
-                    <td><%= a_atleta.a_sexo %></td>
+                    <td><%= a_atleta.a_sexo&.descricao %></td>
                   </div>
                 </div>
               </td>
