@@ -82,6 +82,9 @@
         <div class="col-3">
           <%= f.association :a_sexo, collection: ASexo.all.order(:descricao), label_method: :descricao, value_method: :id, input_html: { class: "capitalize" }, prompt: "Selecione um sexo" %>
         </div>
+        <div class="col-6">
+          <%= f.input :foto_atleta, as: :file, input_html: { accept: 'image/*' }, label: "Foto do Atleta" %>
+        </div>
       </div>
     </div>
     <div class="card-footer">

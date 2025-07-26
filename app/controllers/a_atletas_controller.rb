@@ -51,7 +51,7 @@ class AAtletasController < ApplicationController
 
   def a_atleta_params
     permitted_attributes = AAtleta.column_names.reject { |col| ['deleted_at', 'created_by', 'updated_by'].include?(col) }
-    params.require(:a_atleta).permit(permitted_attributes.map(&:to_sym))
+    params.require(:a_atleta).permit(permitted_attributes.map(&:to_sym), :foto_atleta)
   end
 
   def handle_not_found
