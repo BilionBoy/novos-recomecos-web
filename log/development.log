@@ -31670,3 +31670,670 @@ Processing by GAdminController#index as HTML
 Completed 200 OK in 23ms (Views: 7.7ms | ActiveRecord: 0.5ms (2 queries, 0 cached) | GC: 13.2ms)
 
 
+Started GET "/a_atletas" for 127.0.0.1 at 2025-07-26 14:25:00 -0400
+Processing by AAtletasController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAAtleta Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "a_atletas"[0m
+  ↳ app/controllers/a_atletas_controller.rb:9:in `index'
+  [1m[36mGTipoUsuario Load (0.1ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering a_atletas/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  [1m[36mAAtleta Load (0.1ms)[0m  [1m[34mSELECT "a_atletas".* FROM "a_atletas" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/a_atletas/index.html.erb:27
+  [1m[36mAUnidadeTreinamento Load (0.1ms)[0m  [1m[34mSELECT "a_unidade_treinamentos".* FROM "a_unidade_treinamentos" WHERE "a_unidade_treinamentos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/a_atletas/index.html.erb:48
+  [1m[36mASexo Load (0.2ms)[0m  [1m[34mSELECT "a_sexos".* FROM "a_sexos" WHERE "a_sexos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/a_atletas/index.html.erb:49
+  Rendered a_atletas/index.html.erb within layouts/application (Duration: 5.2ms | GC: 0.4ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.5ms | GC: 0.2ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | GC: 0.7ms)
+Completed 200 OK in 16ms (Views: 10.5ms | ActiveRecord: 1.3ms (6 queries, 0 cached) | GC: 1.6ms)
+
+
+Started GET "/g_estados" for 127.0.0.1 at 2025-07-26 14:25:00 -0400
+Processing by GEstadosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGEstado Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "g_estados"[0m
+  ↳ app/controllers/g_estados_controller.rb:9:in `index'
+  [1m[36mGTipoUsuario Load (0.1ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering g_estados/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  [1m[36mGEstado Load (0.1ms)[0m  [1m[34mSELECT "g_estados".* FROM "g_estados" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/g_estados/index.html.erb:25
+  Rendered g_estados/index.html.erb within layouts/application (Duration: 2.7ms | GC: 0.2ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | GC: 0.3ms)
+Completed 200 OK in 10ms (Views: 6.2ms | ActiveRecord: 0.6ms (4 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/a_unidade_treinamentos" for 127.0.0.1 at 2025-07-26 14:25:01 -0400
+Processing by AUnidadeTreinamentosController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAUnidadeTreinamento Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "a_unidade_treinamentos"[0m
+  ↳ app/controllers/a_unidade_treinamentos_controller.rb:9:in `index'
+  [1m[36mGTipoUsuario Load (0.1ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering a_unidade_treinamentos/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  [1m[36mAUnidadeTreinamento Load (0.1ms)[0m  [1m[34mSELECT "a_unidade_treinamentos".* FROM "a_unidade_treinamentos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/a_unidade_treinamentos/index.html.erb:23
+  [1m[36mAZonaTreinamento Load (0.1ms)[0m  [1m[34mSELECT "a_zona_treinamentos".* FROM "a_zona_treinamentos" WHERE "a_zona_treinamentos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/a_unidade_treinamentos/index.html.erb:41
+  Rendered a_unidade_treinamentos/index.html.erb within layouts/application (Duration: 9.5ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | GC: 0.0ms)
+Completed 200 OK in 19ms (Views: 12.2ms | ActiveRecord: 2.8ms (5 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/a_zona_treinamentos" for 127.0.0.1 at 2025-07-26 14:25:01 -0400
+Processing by AZonaTreinamentosController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAZonaTreinamento Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "a_zona_treinamentos"[0m
+  ↳ app/controllers/a_zona_treinamentos_controller.rb:9:in `index'
+  [1m[36mGTipoUsuario Load (0.2ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering a_zona_treinamentos/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  [1m[36mAZonaTreinamento Load (0.1ms)[0m  [1m[34mSELECT "a_zona_treinamentos".* FROM "a_zona_treinamentos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/a_zona_treinamentos/index.html.erb:25
+  Rendered a_zona_treinamentos/index.html.erb within layouts/application (Duration: 3.7ms | GC: 0.6ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | GC: 0.6ms)
+Completed 200 OK in 20ms (Views: 8.0ms | ActiveRecord: 1.1ms (4 queries, 0 cached) | GC: 7.5ms)
+
+
+Started GET "/a_atletas" for 127.0.0.1 at 2025-07-26 14:25:03 -0400
+Processing by AAtletasController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAAtleta Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "a_atletas"[0m
+  ↳ app/controllers/a_atletas_controller.rb:9:in `index'
+  [1m[36mGTipoUsuario Load (0.1ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering a_atletas/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  [1m[36mAAtleta Load (0.1ms)[0m  [1m[34mSELECT "a_atletas".* FROM "a_atletas" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/a_atletas/index.html.erb:27
+  [1m[36mAUnidadeTreinamento Load (0.1ms)[0m  [1m[34mSELECT "a_unidade_treinamentos".* FROM "a_unidade_treinamentos" WHERE "a_unidade_treinamentos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/a_atletas/index.html.erb:48
+  [1m[36mASexo Load (0.1ms)[0m  [1m[34mSELECT "a_sexos".* FROM "a_sexos" WHERE "a_sexos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/a_atletas/index.html.erb:49
+  Rendered a_atletas/index.html.erb within layouts/application (Duration: 5.0ms | GC: 0.3ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | GC: 0.9ms)
+Completed 200 OK in 14ms (Views: 9.3ms | ActiveRecord: 1.1ms (6 queries, 0 cached) | GC: 0.9ms)
+
+
+Started GET "/a_atletas/new" for 127.0.0.1 at 2025-07-26 14:25:04 -0400
+Processing by AAtletasController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGTipoUsuario Load (0.2ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering a_atletas/new.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  [1m[36mGEstado Load (0.3ms)[0m  [1m[34mSELECT "g_estados".* FROM "g_estados" ORDER BY "g_estados"."nome_fantasia" ASC[0m
+  ↳ app/views/a_atletas/_form.html.erb:74
+  [1m[36mGCidade Load (0.1ms)[0m  [1m[34mSELECT "g_cidades".* FROM "g_cidades" ORDER BY "g_cidades"."nome_fantasia" ASC[0m
+  ↳ app/views/a_atletas/_form.html.erb:77
+  [1m[36mAUnidadeTreinamento Load (0.1ms)[0m  [1m[34mSELECT "a_unidade_treinamentos".* FROM "a_unidade_treinamentos" ORDER BY "a_unidade_treinamentos"."descricao" ASC[0m
+  ↳ app/views/a_atletas/_form.html.erb:80
+  [1m[36mASexo Load (0.1ms)[0m  [1m[34mSELECT "a_sexos".* FROM "a_sexos" ORDER BY "a_sexos"."descricao" ASC[0m
+  ↳ app/views/a_atletas/_form.html.erb:83
+  Rendered a_atletas/_form.html.erb (Duration: 13.9ms | GC: 1.3ms)
+  Rendered a_atletas/new.html.erb within layouts/application (Duration: 14.2ms | GC: 1.3ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | GC: 1.3ms)
+Completed 200 OK in 21ms (Views: 17.3ms | ActiveRecord: 1.1ms (6 queries, 0 cached) | GC: 1.3ms)
+
+
+Started GET "/a_atletas" for 127.0.0.1 at 2025-07-26 14:25:07 -0400
+Processing by AAtletasController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAAtleta Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "a_atletas"[0m
+  ↳ app/controllers/a_atletas_controller.rb:9:in `index'
+  [1m[36mGTipoUsuario Load (0.1ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering a_atletas/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  [1m[36mAAtleta Load (0.1ms)[0m  [1m[34mSELECT "a_atletas".* FROM "a_atletas" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/a_atletas/index.html.erb:27
+  [1m[36mAUnidadeTreinamento Load (0.1ms)[0m  [1m[34mSELECT "a_unidade_treinamentos".* FROM "a_unidade_treinamentos" WHERE "a_unidade_treinamentos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/a_atletas/index.html.erb:48
+  [1m[36mASexo Load (0.1ms)[0m  [1m[34mSELECT "a_sexos".* FROM "a_sexos" WHERE "a_sexos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/a_atletas/index.html.erb:49
+  Rendered a_atletas/index.html.erb within layouts/application (Duration: 4.2ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | GC: 5.2ms)
+Completed 200 OK in 18ms (Views: 13.4ms | ActiveRecord: 0.9ms (6 queries, 0 cached) | GC: 5.2ms)
+
+
+Started GET "/a_atletas" for 127.0.0.1 at 2025-07-26 14:25:10 -0400
+Processing by AAtletasController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAAtleta Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "a_atletas"[0m
+  ↳ app/controllers/a_atletas_controller.rb:9:in `index'
+  [1m[36mGTipoUsuario Load (0.1ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering a_atletas/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  [1m[36mAAtleta Load (0.4ms)[0m  [1m[34mSELECT "a_atletas".* FROM "a_atletas" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/a_atletas/index.html.erb:27
+  [1m[36mAUnidadeTreinamento Load (0.1ms)[0m  [1m[34mSELECT "a_unidade_treinamentos".* FROM "a_unidade_treinamentos" WHERE "a_unidade_treinamentos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/a_atletas/index.html.erb:48
+  [1m[36mASexo Load (0.1ms)[0m  [1m[34mSELECT "a_sexos".* FROM "a_sexos" WHERE "a_sexos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/a_atletas/index.html.erb:49
+  Rendered a_atletas/index.html.erb within layouts/application (Duration: 6.6ms | GC: 0.7ms)
+  Rendered shared/_navbar.html.erb (Duration: 1.0ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | GC: 1.3ms)
+Completed 200 OK in 19ms (Views: 13.5ms | ActiveRecord: 1.3ms (6 queries, 0 cached) | GC: 1.3ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2025-07-26 14:25:14 -0400
+Processing by Users::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 5ms (ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-07-26 14:25:14 -0400
+Processing by GAdminController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-07-26 14:25:14 -0400
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/devise_application
+  Rendered devise/sessions/new.html.erb within layouts/devise_application (Duration: 1.8ms | GC: 0.0ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 12.8ms | GC: 3.8ms)
+Completed 200 OK in 14ms (Views: 13.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.8ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-07-26 14:25:15 -0400
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/devise_application
+  Rendered devise/sessions/new.html.erb within layouts/devise_application (Duration: 1.3ms | GC: 0.0ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 2.4ms | GC: 0.0ms)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2025-08-04 01:27:56 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GAdminController#index as HTML
+Completed 401 Unauthorized in 21ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 14.1ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-08-04 01:27:56 -0400
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/devise_application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/devise_application
+  Rendered devise/sessions/new.html.erb within layouts/devise_application (Duration: 41.6ms | GC: 20.2ms)
+  Rendered layout layouts/devise_application.html.erb (Duration: 117.6ms | GC: 52.1ms)
+Completed 200 OK in 157ms (Views: 127.4ms | ActiveRecord: 8.3ms (0 queries, 0 cached) | GC: 53.8ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2025-08-04 01:27:57 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/users/sign_in" for 127.0.0.1 at 2025-08-04 01:28:04 -0400
+Processing by Users::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"[FILTERED]", "password"=>"[FILTERED]"}, "commit"=>"Entrar"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "[FILTERED]"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 197ms (ActiveRecord: 1.9ms (1 query, 0 cached) | GC: 16.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-08-04 01:28:04 -0400
+Processing by GAdminController#index as TURBO_STREAM
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGTipoUsuario Load (1.0ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering g_admin/index.html.erb within layouts/application
+  Rendered g_admin/index.html.erb within layouts/application (Duration: 0.7ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | GC: 0.2ms)
+Completed 200 OK in 32ms (Views: 22.8ms | ActiveRecord: 4.0ms (2 queries, 0 cached) | GC: 3.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-08-04 01:28:04 -0400
+Processing by GAdminController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGTipoUsuario Load (0.2ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering g_admin/index.html.erb within layouts/application
+  Rendered g_admin/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | GC: 0.2ms)
+Completed 200 OK in 9ms (Views: 5.8ms | ActiveRecord: 0.6ms (2 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/a_unidade_treinamentos" for 127.0.0.1 at 2025-08-04 01:28:08 -0400
+Processing by AUnidadeTreinamentosController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAUnidadeTreinamento Count (2.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "a_unidade_treinamentos"[0m
+  ↳ app/controllers/a_unidade_treinamentos_controller.rb:9:in `index'
+  [1m[36mGTipoUsuario Load (0.3ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering a_unidade_treinamentos/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 2.0ms | GC: 1.3ms)
+  [1m[36mAUnidadeTreinamento Load (0.2ms)[0m  [1m[34mSELECT "a_unidade_treinamentos".* FROM "a_unidade_treinamentos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/a_unidade_treinamentos/index.html.erb:23
+  [1m[36mAZonaTreinamento Load (0.9ms)[0m  [1m[34mSELECT "a_zona_treinamentos".* FROM "a_zona_treinamentos" WHERE "a_zona_treinamentos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/a_unidade_treinamentos/index.html.erb:41
+  Rendered a_unidade_treinamentos/index.html.erb within layouts/application (Duration: 54.8ms | GC: 33.9ms)
+  Rendered shared/_navbar.html.erb (Duration: 1.7ms | GC: 1.2ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 1.6ms | GC: 1.3ms)
+  Rendered layout layouts/application.html.erb (Duration: 66.3ms | GC: 41.3ms)
+Completed 200 OK in 89ms (Views: 65.9ms | ActiveRecord: 8.4ms (5 queries, 0 cached) | GC: 50.4ms)
+
+
+Started GET "/g_cidades" for 127.0.0.1 at 2025-08-04 01:28:09 -0400
+Processing by GCidadesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGCidade Count (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "g_cidades"[0m
+  ↳ app/controllers/g_cidades_controller.rb:9:in `index'
+  [1m[36mGTipoUsuario Load (0.2ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering g_cidades/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  [1m[36mGCidade Load (0.2ms)[0m  [1m[34mSELECT "g_cidades".* FROM "g_cidades" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/g_cidades/index.html.erb:23
+  [1m[36mGEstado Load (0.9ms)[0m  [1m[34mSELECT "g_estados".* FROM "g_estados" WHERE "g_estados"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/g_cidades/index.html.erb:41
+  Rendered g_cidades/index.html.erb within layouts/application (Duration: 19.2ms | GC: 1.3ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 23.4ms | GC: 1.5ms)
+Completed 200 OK in 33ms (Views: 20.4ms | ActiveRecord: 7.4ms (5 queries, 0 cached) | GC: 1.8ms)
+
+
+Started GET "/g_tipo_usuarios" for 127.0.0.1 at 2025-08-04 01:28:11 -0400
+Processing by GTipoUsuariosController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGTipoUsuario Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "g_tipo_usuarios"[0m
+  ↳ app/controllers/g_tipo_usuarios_controller.rb:9:in `index'
+  [1m[36mGTipoUsuario Load (0.1ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering g_tipo_usuarios/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  [1m[36mGTipoUsuario Load (0.1ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/g_tipo_usuarios/index.html.erb:22
+  Rendered g_tipo_usuarios/index.html.erb within layouts/application (Duration: 3.0ms | GC: 0.1ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | GC: 0.2ms)
+Completed 200 OK in 11ms (Views: 7.0ms | ActiveRecord: 0.7ms (4 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/a_atletas" for 127.0.0.1 at 2025-08-04 01:28:11 -0400
+Processing by AAtletasController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAAtleta Count (1.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "a_atletas"[0m
+  ↳ app/controllers/a_atletas_controller.rb:9:in `index'
+  [1m[36mGTipoUsuario Load (0.2ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering a_atletas/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  [1m[36mAAtleta Load (0.3ms)[0m  [1m[34mSELECT "a_atletas".* FROM "a_atletas" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/a_atletas/index.html.erb:27
+  [1m[36mAUnidadeTreinamento Load (0.3ms)[0m  [1m[34mSELECT "a_unidade_treinamentos".* FROM "a_unidade_treinamentos" WHERE "a_unidade_treinamentos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/a_atletas/index.html.erb:48
+  [1m[36mASexo Load (0.9ms)[0m  [1m[34mSELECT "a_sexos".* FROM "a_sexos" WHERE "a_sexos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/a_atletas/index.html.erb:49
+  Rendered a_atletas/index.html.erb within layouts/application (Duration: 25.2ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 28.8ms | GC: 0.0ms)
+Completed 200 OK in 53ms (Views: 25.8ms | ActiveRecord: 8.3ms (6 queries, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/a_atletas/new" for 127.0.0.1 at 2025-08-04 01:28:12 -0400
+Processing by AAtletasController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGTipoUsuario Load (0.1ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering a_atletas/new.html.erb within layouts/application
+  [1m[36mASexo Load (0.5ms)[0m  [1m[34mSELECT "a_sexos".* FROM "a_sexos" ORDER BY "a_sexos"."descricao" ASC[0m
+  ↳ app/views/a_atletas/_form.html.erb:60
+  [1m[36mGEstado Load (0.8ms)[0m  [1m[34mSELECT "g_estados".* FROM "g_estados" ORDER BY "g_estados"."nome_fantasia" ASC[0m
+  ↳ app/views/a_atletas/_form.html.erb:176
+  [1m[36mGCidade Load (0.2ms)[0m  [1m[34mSELECT "g_cidades".* FROM "g_cidades" ORDER BY "g_cidades"."nome_fantasia" ASC[0m
+  ↳ app/views/a_atletas/_form.html.erb:185
+  [1m[36mAUnidadeTreinamento Load (0.2ms)[0m  [1m[34mSELECT "a_unidade_treinamentos".* FROM "a_unidade_treinamentos" ORDER BY "a_unidade_treinamentos"."descricao" ASC[0m
+  ↳ app/views/a_atletas/_form.html.erb:211
+  Rendered a_atletas/_form.html.erb (Duration: 41.3ms | GC: 9.1ms)
+  Rendered a_atletas/new.html.erb within layouts/application (Duration: 41.9ms | GC: 9.1ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 45.5ms | GC: 9.5ms)
+Completed 200 OK in 51ms (Views: 43.6ms | ActiveRecord: 3.5ms (6 queries, 0 cached) | GC: 9.5ms)
+
+
+Started GET "/a_atletas/new" for 127.0.0.1 at 2025-08-04 01:29:16 -0400
+Processing by AAtletasController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGTipoUsuario Load (0.1ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering a_atletas/new.html.erb within layouts/application
+  [1m[36mASexo Load (0.2ms)[0m  [1m[34mSELECT "a_sexos".* FROM "a_sexos" ORDER BY "a_sexos"."descricao" ASC[0m
+  ↳ app/views/a_atletas/_form.html.erb:60
+  [1m[36mGEstado Load (0.2ms)[0m  [1m[34mSELECT "g_estados".* FROM "g_estados" ORDER BY "g_estados"."nome_fantasia" ASC[0m
+  ↳ app/views/a_atletas/_form.html.erb:176
+  [1m[36mGCidade Load (0.2ms)[0m  [1m[34mSELECT "g_cidades".* FROM "g_cidades" ORDER BY "g_cidades"."nome_fantasia" ASC[0m
+  ↳ app/views/a_atletas/_form.html.erb:185
+  [1m[36mAUnidadeTreinamento Load (0.2ms)[0m  [1m[34mSELECT "a_unidade_treinamentos".* FROM "a_unidade_treinamentos" ORDER BY "a_unidade_treinamentos"."descricao" ASC[0m
+  ↳ app/views/a_atletas/_form.html.erb:211
+  Rendered a_atletas/_form.html.erb (Duration: 43.7ms | GC: 1.9ms)
+  Rendered a_atletas/new.html.erb within layouts/application (Duration: 44.2ms | GC: 1.9ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 48.8ms | GC: 1.9ms)
+Completed 200 OK in 91ms (Views: 46.0ms | ActiveRecord: 16.0ms (6 queries, 0 cached) | GC: 13.3ms)
+
+
+Started GET "/a_atletas" for 127.0.0.1 at 2025-08-04 01:29:23 -0400
+Processing by AAtletasController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAAtleta Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "a_atletas"[0m
+  ↳ app/controllers/a_atletas_controller.rb:9:in `index'
+  [1m[36mGTipoUsuario Load (0.2ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering a_atletas/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  [1m[36mAAtleta Load (0.3ms)[0m  [1m[34mSELECT "a_atletas".* FROM "a_atletas" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/a_atletas/index.html.erb:27
+  [1m[36mAUnidadeTreinamento Load (0.2ms)[0m  [1m[34mSELECT "a_unidade_treinamentos".* FROM "a_unidade_treinamentos" WHERE "a_unidade_treinamentos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/a_atletas/index.html.erb:48
+  [1m[36mASexo Load (0.2ms)[0m  [1m[34mSELECT "a_sexos".* FROM "a_sexos" WHERE "a_sexos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/a_atletas/index.html.erb:49
+  Rendered a_atletas/index.html.erb within layouts/application (Duration: 9.4ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | GC: 0.0ms)
+Completed 200 OK in 18ms (Views: 13.5ms | ActiveRecord: 1.3ms (6 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/a_atletas/new" for 127.0.0.1 at 2025-08-04 01:29:24 -0400
+Processing by AAtletasController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGTipoUsuario Load (0.1ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering a_atletas/new.html.erb within layouts/application
+  [1m[36mASexo Load (0.5ms)[0m  [1m[34mSELECT "a_sexos".* FROM "a_sexos" ORDER BY "a_sexos"."descricao" ASC[0m
+  ↳ app/views/a_atletas/_form.html.erb:60
+  [1m[36mGEstado Load (0.7ms)[0m  [1m[34mSELECT "g_estados".* FROM "g_estados" ORDER BY "g_estados"."nome_fantasia" ASC[0m
+  ↳ app/views/a_atletas/_form.html.erb:176
+  [1m[36mGCidade Load (0.7ms)[0m  [1m[34mSELECT "g_cidades".* FROM "g_cidades" ORDER BY "g_cidades"."nome_fantasia" ASC[0m
+  ↳ app/views/a_atletas/_form.html.erb:185
+  [1m[36mAUnidadeTreinamento Load (0.6ms)[0m  [1m[34mSELECT "a_unidade_treinamentos".* FROM "a_unidade_treinamentos" ORDER BY "a_unidade_treinamentos"."descricao" ASC[0m
+  ↳ app/views/a_atletas/_form.html.erb:211
+  Rendered a_atletas/_form.html.erb (Duration: 26.0ms | GC: 1.8ms)
+  Rendered a_atletas/new.html.erb within layouts/application (Duration: 26.4ms | GC: 1.8ms)
+  Rendered shared/_navbar.html.erb (Duration: 1.0ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 33.1ms | GC: 2.2ms)
+Completed 200 OK in 51ms (Views: 32.7ms | ActiveRecord: 2.9ms (6 queries, 0 cached) | GC: 13.9ms)
+
+
+Started GET "/a_atletas" for 127.0.0.1 at 2025-08-04 01:29:40 -0400
+Processing by AAtletasController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAAtleta Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "a_atletas"[0m
+  ↳ app/controllers/a_atletas_controller.rb:9:in `index'
+  [1m[36mGTipoUsuario Load (0.1ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering a_atletas/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  [1m[36mAAtleta Load (0.4ms)[0m  [1m[34mSELECT "a_atletas".* FROM "a_atletas" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/a_atletas/index.html.erb:27
+  [1m[36mAUnidadeTreinamento Load (0.3ms)[0m  [1m[34mSELECT "a_unidade_treinamentos".* FROM "a_unidade_treinamentos" WHERE "a_unidade_treinamentos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/a_atletas/index.html.erb:48
+  [1m[36mASexo Load (0.2ms)[0m  [1m[34mSELECT "a_sexos".* FROM "a_sexos" WHERE "a_sexos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/a_atletas/index.html.erb:49
+  Rendered a_atletas/index.html.erb within layouts/application (Duration: 7.5ms | GC: 0.1ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | GC: 0.2ms)
+Completed 200 OK in 17ms (Views: 12.5ms | ActiveRecord: 1.5ms (6 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/a_atletas/new" for 127.0.0.1 at 2025-08-04 01:29:53 -0400
+Processing by AAtletasController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGTipoUsuario Load (0.1ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering a_atletas/new.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  [1m[36mGEstado Load (0.2ms)[0m  [1m[34mSELECT "g_estados".* FROM "g_estados" ORDER BY "g_estados"."nome_fantasia" ASC[0m
+  ↳ app/views/a_atletas/_form.html.erb:74
+  [1m[36mGCidade Load (0.2ms)[0m  [1m[34mSELECT "g_cidades".* FROM "g_cidades" ORDER BY "g_cidades"."nome_fantasia" ASC[0m
+  ↳ app/views/a_atletas/_form.html.erb:77
+  [1m[36mAUnidadeTreinamento Load (0.2ms)[0m  [1m[34mSELECT "a_unidade_treinamentos".* FROM "a_unidade_treinamentos" ORDER BY "a_unidade_treinamentos"."descricao" ASC[0m
+  ↳ app/views/a_atletas/_form.html.erb:80
+  [1m[36mASexo Load (0.2ms)[0m  [1m[34mSELECT "a_sexos".* FROM "a_sexos" ORDER BY "a_sexos"."descricao" ASC[0m
+  ↳ app/views/a_atletas/_form.html.erb:83
+  Rendered a_atletas/_form.html.erb (Duration: 42.5ms | GC: 5.9ms)
+  Rendered a_atletas/new.html.erb within layouts/application (Duration: 42.9ms | GC: 5.9ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 47.6ms | GC: 6.3ms)
+Completed 200 OK in 76ms (Views: 44.3ms | ActiveRecord: 14.7ms (6 queries, 0 cached) | GC: 7.3ms)
+
+
+Started GET "/a_atletas/new" for 127.0.0.1 at 2025-08-04 01:30:02 -0400
+Processing by AAtletasController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGTipoUsuario Load (0.1ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering a_atletas/new.html.erb within layouts/application
+  [1m[36mASexo Load (0.2ms)[0m  [1m[34mSELECT "a_sexos".* FROM "a_sexos" ORDER BY "a_sexos"."descricao" ASC[0m
+  ↳ app/views/a_atletas/_form.html.erb:60
+  [1m[36mGEstado Load (0.2ms)[0m  [1m[34mSELECT "g_estados".* FROM "g_estados" ORDER BY "g_estados"."nome_fantasia" ASC[0m
+  ↳ app/views/a_atletas/_form.html.erb:176
+  [1m[36mGCidade Load (0.2ms)[0m  [1m[34mSELECT "g_cidades".* FROM "g_cidades" ORDER BY "g_cidades"."nome_fantasia" ASC[0m
+  ↳ app/views/a_atletas/_form.html.erb:185
+  [1m[36mAUnidadeTreinamento Load (0.1ms)[0m  [1m[34mSELECT "a_unidade_treinamentos".* FROM "a_unidade_treinamentos" ORDER BY "a_unidade_treinamentos"."descricao" ASC[0m
+  ↳ app/views/a_atletas/_form.html.erb:211
+  Rendered a_atletas/_form.html.erb (Duration: 36.6ms | GC: 1.4ms)
+  Rendered a_atletas/new.html.erb within layouts/application (Duration: 37.1ms | GC: 1.4ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 41.3ms | GC: 1.4ms)
+Completed 200 OK in 75ms (Views: 37.9ms | ActiveRecord: 14.4ms (6 queries, 0 cached) | GC: 7.4ms)
+
+
+Started GET "/a_atletas" for 127.0.0.1 at 2025-08-04 01:30:11 -0400
+Processing by AAtletasController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAAtleta Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "a_atletas"[0m
+  ↳ app/controllers/a_atletas_controller.rb:9:in `index'
+  [1m[36mGTipoUsuario Load (0.1ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering a_atletas/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  [1m[36mAAtleta Load (0.3ms)[0m  [1m[34mSELECT "a_atletas".* FROM "a_atletas" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/a_atletas/index.html.erb:27
+  [1m[36mAUnidadeTreinamento Load (0.2ms)[0m  [1m[34mSELECT "a_unidade_treinamentos".* FROM "a_unidade_treinamentos" WHERE "a_unidade_treinamentos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/a_atletas/index.html.erb:48
+  [1m[36mASexo Load (0.1ms)[0m  [1m[34mSELECT "a_sexos".* FROM "a_sexos" WHERE "a_sexos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/a_atletas/index.html.erb:49
+  Rendered a_atletas/index.html.erb within layouts/application (Duration: 13.5ms | GC: 5.9ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | GC: 6.2ms)
+Completed 200 OK in 22ms (Views: 17.1ms | ActiveRecord: 1.2ms (6 queries, 0 cached) | GC: 6.2ms)
+
+
+Started GET "/a_atletas/new" for 127.0.0.1 at 2025-08-04 01:30:12 -0400
+Processing by AAtletasController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGTipoUsuario Load (0.1ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering a_atletas/new.html.erb within layouts/application
+  [1m[36mASexo Load (0.4ms)[0m  [1m[34mSELECT "a_sexos".* FROM "a_sexos" ORDER BY "a_sexos"."descricao" ASC[0m
+  ↳ app/views/a_atletas/_form.html.erb:60
+  [1m[36mGEstado Load (0.2ms)[0m  [1m[34mSELECT "g_estados".* FROM "g_estados" ORDER BY "g_estados"."nome_fantasia" ASC[0m
+  ↳ app/views/a_atletas/_form.html.erb:176
+  [1m[36mGCidade Load (0.2ms)[0m  [1m[34mSELECT "g_cidades".* FROM "g_cidades" ORDER BY "g_cidades"."nome_fantasia" ASC[0m
+  ↳ app/views/a_atletas/_form.html.erb:185
+  [1m[36mAUnidadeTreinamento Load (0.2ms)[0m  [1m[34mSELECT "a_unidade_treinamentos".* FROM "a_unidade_treinamentos" ORDER BY "a_unidade_treinamentos"."descricao" ASC[0m
+  ↳ app/views/a_atletas/_form.html.erb:211
+  Rendered a_atletas/_form.html.erb (Duration: 15.4ms | GC: 0.7ms)
+  Rendered a_atletas/new.html.erb within layouts/application (Duration: 15.6ms | GC: 0.7ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | GC: 1.2ms)
+Completed 200 OK in 24ms (Views: 19.6ms | ActiveRecord: 1.4ms (6 queries, 0 cached) | GC: 1.2ms)
+
+
+Started POST "/a_atletas" for 127.0.0.1 at 2025-08-04 01:30:40 -0400
+Processing by AAtletasController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "a_atleta"=>{"nome"=>"Teste", "cpf"=>"11111111111111111111111111", "data_nascimento(3i)"=>"4", "data_nascimento(2i)"=>"8", "data_nascimento(1i)"=>"2025", "nacionalidade"=>"123123", "a_sexo_id"=>"1", "contato1"=>"213213213123213", "contato2"=>"12312321312312", "nome_pai"=>"12312312312", "nome_mae"=>"3123213123", "responsavel_nome"=>"213123", "responsavel_cpf"=>"123123123", "responsavel_rg"=>"213123", "responsavel_orientacao"=>"123123", "cep"=>"213123123213", "rua"=>"123123123", "numero"=>"1321312", "bairro"=>"3123123", "g_estado_id"=>"1", "g_cidade_id"=>"1", "complemento"=>"213123", "a_unidade_treinamento_id"=>"1", "portador_necessidade"=>"0", "descricao_necessidade"=>"12312"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/a_atletas_controller.rb:22:in `create'
+  [1m[36mGEstado Load (0.3ms)[0m  [1m[34mSELECT "g_estados".* FROM "g_estados" WHERE "g_estados"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/a_atletas_controller.rb:22:in `create'
+  [1m[36mGCidade Load (0.2ms)[0m  [1m[34mSELECT "g_cidades".* FROM "g_cidades" WHERE "g_cidades"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/a_atletas_controller.rb:22:in `create'
+  [1m[36mAUnidadeTreinamento Load (0.1ms)[0m  [1m[34mSELECT "a_unidade_treinamentos".* FROM "a_unidade_treinamentos" WHERE "a_unidade_treinamentos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/a_atletas_controller.rb:22:in `create'
+  [1m[36mASexo Load (0.1ms)[0m  [1m[34mSELECT "a_sexos".* FROM "a_sexos" WHERE "a_sexos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/a_atletas_controller.rb:22:in `create'
+  [1m[36mAAtleta Create (2.2ms)[0m  [1m[32mINSERT INTO "a_atletas" ("nome", "cpf", "data_nascimento", "contato1", "contato2", "nacionalidade", "nome_pai", "nome_mae", "responsavel_nome", "responsavel_cpf", "responsavel_rg", "responsavel_orientacao", "portador_necessidade", "descricao_necessidade", "cep", "rua", "bairro", "numero", "complemento", "g_estado_id", "g_cidade_id", "a_unidade_treinamento_id", "a_sexo_id", "created_by", "updated_by", "deleted_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27, $28) RETURNING "id"[0m  [["nome", "Teste"], ["cpf", "11111111111111111111111111"], ["data_nascimento", "2025-08-04"], ["contato1", "213213213123213"], ["contato2", "12312321312312"], ["nacionalidade", "123123"], ["nome_pai", "12312312312"], ["nome_mae", "3123213123"], ["responsavel_nome", "213123"], ["responsavel_cpf", "123123123"], ["responsavel_rg", "213123"], ["responsavel_orientacao", "123123"], ["portador_necessidade", false], ["descricao_necessidade", "12312"], ["cep", "213123123213"], ["rua", "123123123"], ["bairro", "3123123"], ["numero", "1321312"], ["complemento", "213123"], ["g_estado_id", 1], ["g_cidade_id", 1], ["a_unidade_treinamento_id", 1], ["a_sexo_id", 1], ["created_by", nil], ["updated_by", nil], ["deleted_at", nil], ["created_at", "2025-08-04 05:30:40.982755"], ["updated_at", "2025-08-04 05:30:40.982755"]]
+  ↳ app/controllers/a_atletas_controller.rb:22:in `create'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/a_atletas_controller.rb:22:in `create'
+Redirected to http://127.0.0.1:3000/a_atletas
+Completed 302 Found in 16ms (ActiveRecord: 4.6ms (6 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/a_atletas" for 127.0.0.1 at 2025-08-04 01:30:40 -0400
+Processing by AAtletasController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAAtleta Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "a_atletas"[0m
+  ↳ app/controllers/a_atletas_controller.rb:9:in `index'
+  [1m[36mGTipoUsuario Load (0.1ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering a_atletas/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  [1m[36mAAtleta Load (0.2ms)[0m  [1m[34mSELECT "a_atletas".* FROM "a_atletas" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/a_atletas/index.html.erb:27
+  [1m[36mAUnidadeTreinamento Load (0.2ms)[0m  [1m[34mSELECT "a_unidade_treinamentos".* FROM "a_unidade_treinamentos" WHERE "a_unidade_treinamentos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/a_atletas/index.html.erb:48
+  [1m[36mASexo Load (0.1ms)[0m  [1m[34mSELECT "a_sexos".* FROM "a_sexos" WHERE "a_sexos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/a_atletas/index.html.erb:49
+  [1m[36mCACHE AUnidadeTreinamento Load (0.0ms)[0m  [1m[34mSELECT "a_unidade_treinamentos".* FROM "a_unidade_treinamentos" WHERE "a_unidade_treinamentos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/a_atletas/index.html.erb:48
+  [1m[36mCACHE ASexo Load (0.0ms)[0m  [1m[34mSELECT "a_sexos".* FROM "a_sexos" WHERE "a_sexos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/a_atletas/index.html.erb:49
+  Rendered a_atletas/index.html.erb within layouts/application (Duration: 6.9ms | GC: 0.4ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | GC: 1.2ms)
+Completed 200 OK in 21ms (Views: 12.0ms | ActiveRecord: 1.1ms (8 queries, 2 cached) | GC: 6.5ms)
+
+
+Started DELETE "/a_atletas/2" for 127.0.0.1 at 2025-08-04 01:30:43 -0400
+Processing by AAtletasController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAAtleta Load (0.2ms)[0m  [1m[34mSELECT "a_atletas".* FROM "a_atletas" WHERE "a_atletas"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/a_atletas_controller.rb:48:in `set_a_atleta'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/a_atletas_controller.rb:38:in `destroy'
+  [1m[36mActiveStorage::Attachment Load (1.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "AAtleta"], ["name", "foto_atleta"], ["LIMIT", 1]]
+  ↳ app/controllers/a_atletas_controller.rb:38:in `destroy'
+  [1m[36mAAtleta Destroy (0.9ms)[0m  [1m[31mDELETE FROM "a_atletas" WHERE "a_atletas"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/a_atletas_controller.rb:38:in `destroy'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/a_atletas_controller.rb:38:in `destroy'
+Redirected to http://127.0.0.1:3000/a_atletas
+Completed 302 Found in 14ms (ActiveRecord: 6.5ms (4 queries, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/a_atletas" for 127.0.0.1 at 2025-08-04 01:30:43 -0400
+Processing by AAtletasController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAAtleta Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "a_atletas"[0m
+  ↳ app/controllers/a_atletas_controller.rb:9:in `index'
+  [1m[36mGTipoUsuario Load (0.1ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering a_atletas/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  [1m[36mAAtleta Load (0.2ms)[0m  [1m[34mSELECT "a_atletas".* FROM "a_atletas" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/a_atletas/index.html.erb:27
+  [1m[36mAUnidadeTreinamento Load (0.1ms)[0m  [1m[34mSELECT "a_unidade_treinamentos".* FROM "a_unidade_treinamentos" WHERE "a_unidade_treinamentos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/a_atletas/index.html.erb:48
+  [1m[36mASexo Load (0.1ms)[0m  [1m[34mSELECT "a_sexos".* FROM "a_sexos" WHERE "a_sexos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/a_atletas/index.html.erb:49
+  Rendered a_atletas/index.html.erb within layouts/application (Duration: 4.5ms | GC: 0.4ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | GC: 0.7ms)
+Completed 200 OK in 12ms (Views: 8.1ms | ActiveRecord: 0.9ms (6 queries, 0 cached) | GC: 0.9ms)
+
+
+Started GET "/a_atletas/new" for 127.0.0.1 at 2025-08-04 01:30:44 -0400
+Processing by AAtletasController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGTipoUsuario Load (0.2ms)[0m  [1m[34mSELECT "g_tipo_usuarios".* FROM "g_tipo_usuarios" WHERE "g_tipo_usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/layout_by_user.rb:18:in `set_layout_by_user'
+  Rendering layout layouts/application.html.erb
+  Rendering a_atletas/new.html.erb within layouts/application
+  [1m[36mASexo Load (0.3ms)[0m  [1m[34mSELECT "a_sexos".* FROM "a_sexos" ORDER BY "a_sexos"."descricao" ASC[0m
+  ↳ app/views/a_atletas/_form.html.erb:60
+  [1m[36mGEstado Load (0.3ms)[0m  [1m[34mSELECT "g_estados".* FROM "g_estados" ORDER BY "g_estados"."nome_fantasia" ASC[0m
+  ↳ app/views/a_atletas/_form.html.erb:176
+  [1m[36mGCidade Load (0.2ms)[0m  [1m[34mSELECT "g_cidades".* FROM "g_cidades" ORDER BY "g_cidades"."nome_fantasia" ASC[0m
+  ↳ app/views/a_atletas/_form.html.erb:185
+  [1m[36mAUnidadeTreinamento Load (0.1ms)[0m  [1m[34mSELECT "a_unidade_treinamentos".* FROM "a_unidade_treinamentos" ORDER BY "a_unidade_treinamentos"."descricao" ASC[0m
+  ↳ app/views/a_atletas/_form.html.erb:211
+  Rendered a_atletas/_form.html.erb (Duration: 19.9ms | GC: 5.7ms)
+  Rendered a_atletas/new.html.erb within layouts/application (Duration: 20.1ms | GC: 5.7ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | GC: 6.2ms)
+Completed 200 OK in 28ms (Views: 24.1ms | ActiveRecord: 1.4ms (6 queries, 0 cached) | GC: 6.2ms)
+
+
