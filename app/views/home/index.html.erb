@@ -214,7 +214,6 @@
               <p class="story-lead">Ação beneficiou famílias da região do Eldorado e SkatePark durante todo o mês de julho, demonstrando o poder da solidariedade e do trabalho em equipe que caracteriza nossa comunidade.</p>
             </div>
             <div class="story-image">
-              <img src="/placeholder.svg?height=400&width=700&text=Voluntários+organizando+cestas+básicas+para+distribuição" alt="Voluntários organizando cestas básicas" class="img-fluid">
               <div class="image-caption">
                 <i class="fas fa-camera me-2"></i>
                 Voluntários da Associação Novos Recomeços organizam cestas básicas para distribuição às famílias cadastradas
@@ -264,7 +263,6 @@
             <div class="news-grid">
               <article class="news-card">
                 <div class="news-image">
-                  <img src="/placeholder.svg?height=200&width=350&text=Novos+alunos+Jiu-Jitsu" alt="Novos alunos no Jiu-Jitsu">
                   <span class="news-category esporte">
                     <i class="fas fa-fist-raised me-1"></i>ESPORTE
                   </span>
@@ -280,7 +278,6 @@
               </article>
               <article class="news-card">
                 <div class="news-image">
-                  <img src="/placeholder.svg?height=200&width=350&text=Cerimônia+de+Graduação" alt="Cerimônia de Graduação">
                   <span class="news-category evento">
                     <i class="fas fa-calendar-alt me-1"></i>EVENTO
                   </span>
@@ -692,15 +689,6 @@
     });
   }
 
-  // Error handling for images
-  function initImageErrorHandling() {
-    document.querySelectorAll('img').forEach(img => {
-        img.addEventListener('error', function() {
-            this.src = '/placeholder.svg?height=400&width=600&text=Imagem+Indisponível';
-            this.alt = 'Imagem indisponível';
-        });
-    });
-  }
 
   // Performance monitoring
   function initPerformanceMonitoring() {
