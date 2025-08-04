@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
-  resources :a_atletas
   devise_for :users, controllers: {  registrations: 'users/registrations',  sessions: 'users/sessions' }  
-  root 'g_admin#index'
+  root 'home#index'
   get  "g_admin/index"
   
   # Rotas Scaffold
+  resources :a_atletas
   resources :a_zona_treinamentos
   resources :a_unidade_treinamentos
   resources :a_sexos
