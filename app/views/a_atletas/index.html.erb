@@ -33,6 +33,9 @@
                   </a>
                   <div class="dropdown-menu" style="">
                     <div class="dropdown-header">Opções</div>
+                    <%= link_to a_atleta_path(a_atleta), class: "dropdown-item" do %>
+                      <i class="ph-eye me-2"></i> Visualizar
+                    <% end %>
                     <%= link_to edit_a_atleta_path(a_atleta), class: "dropdown-item" do %>
                       <i class="ph-pen me-2"></i> Editar
                     <% end %>
