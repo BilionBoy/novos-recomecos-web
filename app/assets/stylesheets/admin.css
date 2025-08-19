@@ -126,10 +126,6 @@ abbr {
   background-color: var(--primary-blue);
 }
 
-.text-primary {
-  color: var(--primary-blue) !important;
-}
-
 :root {
   --primary-blue: #1e40af;
   --primary-blue-dark: #1d4ed8;
