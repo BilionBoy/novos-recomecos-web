@@ -1,4 +1,4 @@
-<div class="sidebar sidebar-light sidebar-main sidebar-expand-xl shadow-sm rounded-3 my-1 mx-3" style="background-color: #f8f9fa;">
+<div class="sidebar sidebar-light sidebar-main sidebar-expand-xl shadow-sm rounded-3 my-1 mx-3" style="background-color: #e5e5e5;">
   <div class="sidebar-content">
     <!-- Cabeçalho da sidebar -->
     <div class="sidebar-section border-bottom px-3 py-3 d-flex justify-content-between align-items-center">
@@ -8,24 +8,17 @@
       </button>
     </div>
     <!-- Barra de pesquisa -->
-    <div class="px-3 py-2 border-bottom">
-      <div class="position-relative">
-        <input type="search" id="sidebar-search-input" class="form-control bg-white ps-4" placeholder="Pesquisar..." onkeyup="filterSidebar()"/>
-        <i class="ph-magnifying-glass position-absolute top-50 start-0 translate-middle-y ms-2 text-muted"></i>
-      </div>
-    </div>
     <!-- Lista de navegação -->
     <ul class="nav flex-column pt-2 px-2" id="sidebar-items">
       <% sidebar_items = [
-       { path: root_path,                                icon: 'ph-house',                            label: 'Home' },
-       { path: g_tipo_usuarios_path,                     icon: 'ph-users',                            label: 'Tipos de Usuários'  }, # ability: [:read, ] },,  
-       { path: a_atletas_path,                           icon: 'ph-users-three',                      label: 'Atletas'   },   
-       { path: g_estados_path,                           icon: 'ph-chart-bar',                        label: 'Estados'  }, 
-       { path: g_cidades_path,                           icon: 'ph-cards',                            label: 'Cidades'   },
-       { path: a_unidade_treinamentos_path,              icon: 'ph-codepen-logo',                     label: 'CT de Treinamento'   }, 
-       { path: a_zona_treinamentos_path,                 icon: 'ph-flow-arrow',                       label: 'Zona de Treinamento'   },   
-
-      ] %>
+         { path: root_path,                    icon: 'bi-house-door',          label: 'Home' },
+         { path: g_tipo_usuarios_path,        icon: 'bi-people',               label: 'Tipos de Usuários' },
+         { path: a_atletas_path,              icon: 'bi-person-lines-fill',   label: 'Atletas' },
+         { path: g_estados_path,              icon: 'bi-bar-chart',           label: 'Estados' },
+         { path: g_cidades_path,              icon: 'bi-geo-alt',             label: 'Cidades' },
+         { path: a_unidade_treinamentos_path, icon: 'bi-building',            label: 'CT de Treinamento' },
+         { path: a_zona_treinamentos_path,    icon: 'bi-diagram-3',           label: 'Zona de Treinamento' }
+        ] %>
       <% sidebar_items.each do |item| %>
         <% if item[:ability].nil? || can?(*item[:ability]) %>
           <li class="nav-item">
