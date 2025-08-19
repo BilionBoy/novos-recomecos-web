@@ -36,10 +36,6 @@
             <%= f.input :cpf, placeholder: "CPF (somente números)", input_html: { class: "form-control", maxlength: 11, required: true }, label: false %>
           </div>
           <div class="form-group">
-            <i class="fas fa-user-tag input-icon"></i>
-            <%= f.input :g_tipo_usuario_id, as: :select, collection: GTipoUsuario.all.collect { |gtu| [gtu.descricao, gtu.id] }, prompt: "Selecione uma função", input_html: { class: "form-control", required: true }, label: false %>
-          </div>
-          <div class="form-group">
             <i class="fas fa-lock input-icon"></i>
             <%= f.input :password, autocomplete: "new-password", placeholder: "Senha", input_html: { class: "form-control", required: true }, label: false %>
           </div>
