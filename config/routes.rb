@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users, controllers: {  registrations: 'users/registrations',  sessions: 'users/sessions' }  
-  root 'home#index'
-  get  "g_admin/index"
+  root  "g_admin#index"
+  get   "g_admin/index"
+  get   "home/index" 
   
   # Rotas Scaffold
   resources :a_atletas
